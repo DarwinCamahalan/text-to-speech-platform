@@ -14,6 +14,7 @@ export default () => {
               <h1 className="py-4">Coming Soon</h1>
             </div>
             <iframe
+              title="video"
               width="100%"
               height="400"
               src="https://www.youtube.com/embed/TSoTiZwuxC8?autoplay=1"
