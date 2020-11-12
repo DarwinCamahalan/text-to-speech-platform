@@ -1,0 +1,96 @@
+body {
+  background: #2b2b2b;
+  background: radial-gradient(circle, #2b2b2b 0%, black 100%);
+  background-size: cover;
+}
+
+footer {
+  background: #fff;
+}
+
+.robot {
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.robot2 {
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+textarea {
+  resize: none !important;
+  height: 25vh !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid #000 !important;
+}
+
+.voice {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid #000 !important;
+  width: 100% !important;
+}
+
+.labelinput:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.prev {
+  background: #000 !important;
+}
+
+.prev:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #50c4fa !important;
+}
+
+.input {
+  color: black !important;
+}
+
+@media (max-width: 768px) {
+  .player {
+    margin: 2px 0px 0px 5px;
+    position: absolute;
+  }
+  .robot {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .player {
+    margin: 20px 70px 0px 0px !important;
+    padding: 0px 50px !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=style.css.map */
