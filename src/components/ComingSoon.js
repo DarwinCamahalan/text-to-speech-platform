@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/style.css";
 import { Container, Col, Row } from "reactstrap";
-export default () => {
+export default function ComingSoon() {
   return (
     <div className="py-3 mt-4">
       <Container fluid className="mx-auto m-0 p-0">
@@ -26,4 +26,4 @@ export default () => {
       </Container>
     </div>
   );
-};
+}

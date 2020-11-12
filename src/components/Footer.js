@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 
-export default () => {
+export default function Footer() {
   return (
     <footer className="border-top" style={{ borderTopColor: "blue" }}>
       <Container className="py-3">
@@ -89,4 +89,4 @@ export default () => {
       </Container>
     </footer>
   );
-};
+}

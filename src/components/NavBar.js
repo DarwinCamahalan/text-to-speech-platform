@@ -12,7 +12,7 @@ import {
   NavLink,
 } from "reactstrap";
 
-export default () => {
+export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scroll, setScroll] = useState(true);
   const toggle = () => {
@@ -88,4 +88,4 @@ export default () => {
       </Container>
     </Navbar>
   );
-};
+}

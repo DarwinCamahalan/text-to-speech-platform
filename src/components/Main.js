@@ -16,7 +16,7 @@ import {
   ButtonDropdown,
   Button,
 } from "reactstrap";
-export default () => {
+export default function Main() {
   const [dropdownOpen, setOpen] = useState(false);
 
   const toggle = () => setOpen(!dropdownOpen);
@@ -101,4 +101,4 @@ export default () => {
       </Container>
     </div>
   );
-};
+}

@@ -2,7 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 
-export default () => {
+export default function routes() {
   return (
     <Router>
       <Switch>
@@ -12,4 +12,4 @@ export default () => {
       </Switch>
     </Router>
   );
-};
+}
