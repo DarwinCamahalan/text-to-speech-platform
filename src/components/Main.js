@@ -55,28 +55,22 @@ export default function Main() {
                     </DropdownItem>
                     <DropdownItem>
                       {" "}
-                      English (Female) : Diana S. Scott
+                      English (Male) : Darwin Camahalan
                     </DropdownItem>
                     <DropdownItem>
                       {" "}
-                      English (Female) : Diana S. Scott
+                      English (Female) : Nimfa Sumalinog
                     </DropdownItem>
                     <DropdownItem>
                       {" "}
-                      English (Female) : Diana S. Scott
+                      English (Male) : John Wendell Go
                     </DropdownItem>
-                    <DropdownItem>
-                      {" "}
-                      English (Female) : Diana S. Scott
-                    </DropdownItem>
-                    <DropdownItem>
-                      {" "}
-                      English (Female) : Diana S. Scott
-                    </DropdownItem>
+                    <DropdownItem> English (Female) : Yvonne Yee</DropdownItem>
+                    <DropdownItem> English (Male) : Mr. Bean</DropdownItem>
                   </DropdownMenu>
                 </ButtonDropdown>
                 <Container fluid className="mx-auto">
-                  <Row className="mx-auto mt-3">
+                  <Row className=" mx-auto mt-3">
                     <Button className="prev m-0 px-5 mx-auto btn-xs shdadow-lg rounded-pill">
                       <strong>Preview</strong>
                     </Button>
@@ -94,8 +88,12 @@ export default function Main() {
           </Col>
 
           <Col>
-            {" "}
-            <img className="robot" src="/assets/image/robot2.png" alt="robot" />
+            <img
+              className="robot"
+              src="/assets/image/robot2.png"
+              width="100% "
+              alt="robot"
+            />
           </Col>
         </Row>
       </Container>
