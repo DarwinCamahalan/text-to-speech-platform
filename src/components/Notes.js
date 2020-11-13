@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { useSpeechRecognition } from "react-speech-kit";
+import React from "react";
+// import { useSpeechRecognition } from "react-speech-kit";
 import "../styles/style.css";
 import { Container } from "reactstrap";
 
 export default function Notes() {
-  const [value, setValue] = useState("");
-  const { listen, listening, stop } = useSpeechRecognition({
-    onResult: (result) => {
-      setValue(result);
-    },
-  });
+  // const [value, setValue] = useState("");
+  // const { listen, listening, stop } = useSpeechRecognition({
+  //   onResult: (result) => {
+  //     setValue(result);
+  //   },
+  // });
   return (
     <>
       <div>
