@@ -23,14 +23,22 @@ export default function Main() {
   });
   return (
     <>
-      <header className="container mx-auto">
-        <Container fluid className="mobile-view container mx-auto m-0 p-0">
-          <Card className="card">
+      <header className="container mx-auto ">
+        <Container fluid className="mobile-view container mx-auto pt-5">
+          <Card className="card ">
             <FormGroup>
               <Label for="textInput">
                 <h5 className="py-3">
                   Input Text Here or Click the{" "}
-                  <i className="fas fa-microphone px-1"></i> icon.
+                  <i className="micicon fas fa-microphone px-1"></i> icon.
+                  <div className="micicon2 m-0 p-0">
+                    <img
+                      src="/assets/video/gif1.gif"
+                      alt="gif"
+                      width="120px"
+                      height="40px"
+                    />
+                  </div>
                 </h5>
               </Label>
               <Input
@@ -65,6 +73,18 @@ export default function Main() {
             </CardBody>
           </Card>
         </Container>
+        <img
+          className="robot"
+          src="/assets/video/gif4.gif"
+          alt="gif"
+          width="100%"
+        />
+        <img
+          className="robot"
+          src="/assets/video/gif2.gif"
+          alt="gif"
+          width="100%"
+        />
         <img src="/assets/image/robot2.png" alt="robot" className="robot" />
       </header>
       <hr />

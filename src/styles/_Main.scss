@@ -4,17 +4,27 @@ header {
 
 .container {
   .card {
+    z-index: 1;
     margin-top: 100px !important;
     padding: 0px 30px;
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  }
+  .card:hover {
+    transform: scale(1.01);
+    transition: all 0.2s ease;
   }
   .robot {
-    width: 45%;
+    z-index: 0;
+    position: absolute;
+    width: 470px;
     height: 100vh;
     float: left;
     margin: 0px 0px 0px 0px;
   }
+
   #textInput {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     border: 0px !important  ;
     height: 25vh;
@@ -68,18 +78,39 @@ header {
       #2193b0
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
+  .micicon:hover {
+    transform: scale(1.2);
+    color: white !important;
+    background: #2193b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #6dd5ed,
+      #2193b0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #6dd5ed,
+      #2193b0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 5px !important;
+    border-radius: 10px;
+  }
+  .micicon2 {
+    float: right;
+    margin-left: 100px !important;
+  }
 }
 @media (min-width: 1000px) {
   .card {
-    left: 23%;
+    left: 25%;
     width: 55%;
   }
   .mobile-view {
     position: absolute;
   }
   .robot:hover {
-    transition: all 0.3s ease;
-    transform: scale(1.1);
+    transition: all 0.5s ease;
+    transform: scale(1.05);
   }
 }
 @media (max-width: 1000px) {

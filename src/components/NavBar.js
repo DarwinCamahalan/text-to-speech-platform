@@ -38,13 +38,16 @@ export default function NavBar() {
 
   return (
     <Navbar
-      className={classnames(scroll ? "bg-transparent" : "bg-light shadow-lg")}
+      className={classnames(
+        "m-0 p-0",
+        scroll ? "bg-transparent" : "bg-light shadow-lg"
+      )}
       style={!scroll ? { opacity: 0.95 } : null}
       dark={scroll}
       light={!scroll}
       expand="md"
     >
-      <Container className="nav">
+      <Container fluid className="nav mx-5 px-5">
         <NavbarBrand
           className="brand pt-3"
           href="/"
@@ -53,11 +56,11 @@ export default function NavBar() {
           <h2>
             {" "}
             <strong>Text to Speech</strong>{" "}
-            <img className="pb-1" src="/logo.png" alt="logo" width="60px" />
+            <img className="pb-1" src="/favicon.png" alt="logo" width="60px" />
           </h2>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse className="text-center" isOpen={isOpen} navbar>
+        <Collapse className="text-center py-1" isOpen={isOpen} navbar>
           <Nav className="navtxt ml-auto" navbar>
             <NavItem>
               <NavLink

@@ -13,13 +13,13 @@ export default function Notes() {
   return (
     <>
       <div>
-        <Container className="py-5 my-5">
+        <Container className="pt-5 mt-5 mx-auto">
           <h1 className="text-white text-center">Coming Soon! </h1>
           <h4 className="text-white text-center">
             More Features to Come{" "}
             <i style={{ fontSize: "30px" }} className="fas fa-robot"></i>
           </h4>
-          <Card>
+          {/* <Card>
             <FormGroup>
               <Label for="textInput"></Label>
               <Input
@@ -39,7 +39,8 @@ export default function Notes() {
               </Button>
               {listening && <div>Go ahead I'm listening</div>}
             </FormGroup>
-          </Card>
+          </Card> */}
+          <img src="/assets/image/robot3.png" alt="" className="vh-100" />
         </Container>
       </div>
     </>
