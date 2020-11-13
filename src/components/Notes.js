@@ -40,7 +40,8 @@ export default function Notes() {
               {listening && <div>Go ahead I'm listening</div>}
             </FormGroup>
           </Card> */}
-          <img src="/assets/image/robot3.png" alt="" className="vh-100" />
+
+          <img src="/assets/image/robot3.png" alt="robot" className="robot2" />
         </Container>
       </div>
     </>

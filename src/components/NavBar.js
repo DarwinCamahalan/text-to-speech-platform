@@ -47,7 +47,7 @@ export default function NavBar() {
       light={!scroll}
       expand="md"
     >
-      <Container fluid className="nav mx-5 px-5">
+      <Container fluid className="nav mx-3">
         <NavbarBrand
           className="brand pt-3"
           href="/"

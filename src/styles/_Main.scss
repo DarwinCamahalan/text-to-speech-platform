@@ -17,7 +17,7 @@ header {
   .robot {
     z-index: 0;
     position: absolute;
-    width: 470px;
+    width: 485px;
     height: 100vh;
     float: left;
     margin: 0px 0px 0px 0px;
@@ -112,6 +112,10 @@ header {
     transition: all 0.5s ease;
     transform: scale(1.05);
   }
+  .nav {
+    padding: 0px 40px !important;
+    margin: 0px 40px !important;
+  }
 }
 @media (max-width: 1000px) {
   .mobile-view {
@@ -120,5 +124,8 @@ header {
   }
   .robot {
     display: none;
+  }
+  .robot2 {
+    width: 100% !important;
   }
 }
