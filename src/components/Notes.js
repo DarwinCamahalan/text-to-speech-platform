@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSpeechRecognition } from "react-speech-kit";
 import "../styles/style.css";
-import { Container, Card, FormGroup, Input, Label, Button } from "reactstrap";
+import { Container } from "reactstrap";
 
 export default function Notes() {
   const [value, setValue] = useState("");
