@@ -42,11 +42,10 @@ export default function NavBar() {
       style={!scroll ? { opacity: 0.95 } : null}
       dark={scroll}
       light={!scroll}
-      fixed="top"
-      expand="sm"
+      expand="md"
     >
-      <Container>
-        <NavbarBrand className="pt-3 logo-mobile font-weight-bold" href="/">
+      <Container className="nav">
+        <NavbarBrand href="/" style={{ fontFamily: "Quantico, sans-serif" }}>
           <h3>
             {" "}
             <strong>Text to Speech</strong>
@@ -54,23 +53,23 @@ export default function NavBar() {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse className="text-center" isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="navtxt ml-auto" navbar>
             <NavItem>
               <NavLink
                 className={classnames(scroll ? "text-white" : "text-dark")}
                 data-page="about"
                 href="/about"
               >
-                <strong> About</strong>
+                About
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 className={classnames(scroll ? "text-white" : "text-dark")}
-                data-page="events"
-                href="/events"
+                data-page="team"
+                href="/team"
               >
-                <strong> Team</strong>
+                Team
               </NavLink>
             </NavItem>
 
@@ -78,9 +77,9 @@ export default function NavBar() {
               <NavLink
                 className={classnames(scroll ? "text-white" : "text-dark")}
                 data-page="contact"
-                href="/contactus"
+                href="/contact"
               >
-                <strong> Contact</strong>
+                Contact
               </NavLink>
             </NavItem>
           </Nav>

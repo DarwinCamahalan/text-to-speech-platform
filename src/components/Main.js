@@ -1,102 +1,54 @@
-import React, { useState } from "react";
-import ReactAudioPlayer from "react-audio-player";
+import React from "react";
+import { useSpeechSynthesis, useSpeechRecognition } from "react-speech-kit";
+
 import "../styles/style.css";
+
 import {
   Container,
   Card,
-  Col,
-  Row,
   CardBody,
   FormGroup,
   Input,
   Label,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  ButtonDropdown,
   Button,
 } from "reactstrap";
+
 export default function Main() {
-  const [dropdownOpen, setOpen] = useState(false);
-
-  const toggle = () => setOpen(!dropdownOpen);
+  const [value, setValue] = React.useState("");
+  const { speak } = useSpeechSynthesis();
+  const { listen, listening, stop } = useSpeechRecognition({
+    onResult: (result) => {
+      setValue(result);
+    },
+  });
   return (
-    <div className="pt-5 mt-4">
-      <Container fluid className="mx-auto">
-        <Row className="mx-auto">
-          <Col>
-            <Card className="shadow-lg px-3 mt-5">
-              <CardBody>
+    <>
+      <header>
+        <Container className="container py-5 mx-auto">
+          <Card className="card">
+            <FormGroup>
+              <Label for="textInput">Type Text Here *</Label>
+              <Input
+                type="textarea"
+                name="text"
+                id="textInput"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+              />
+            </FormGroup>
+            <CardBody>
+              <Button className="play" onClick={() => speak({ text: value })}>
+                <i className="text-dark fas fa-play"></i>
+              </Button>
+              <Button className="mic" onMouseDown={listen} onMouseUp={stop}>
                 {" "}
-                <FormGroup>
-                  <Label className="labelinput" for="exampleText">
-                    Write your Text Here (2000 characters left / day) *
-                  </Label>
-                  <Input
-                    className="input shadow-none"
-                    type="textarea"
-                    name="text"
-                    id="exampleText"
-                  />
-                </FormGroup>
-                <ButtonDropdown
-                  isOpen={dropdownOpen}
-                  toggle={toggle}
-                  color="transparent"
-                  className="w-100 text-dark"
-                >
-                  <DropdownToggle caret className="voice text-dark shadow-none">
-                    {" "}
-                    <strong>Voices</strong>{" "}
-                  </DropdownToggle>
-                  <DropdownMenu className="w-100 justify-content-center text-center">
-                    <DropdownItem>
-                      English (Female) : Diana S. Scott
-                    </DropdownItem>
-                    <DropdownItem>
-                      {" "}
-                      English (Male) : Darwin Camahalan
-                    </DropdownItem>
-                    <DropdownItem>
-                      {" "}
-                      English (Female) : Nimfa Sumalinog
-                    </DropdownItem>
-                    <DropdownItem>
-                      {" "}
-                      English (Male) : John Wendell Go
-                    </DropdownItem>
-                    <DropdownItem> English (Female) : Yvonne Yee</DropdownItem>
-                    <DropdownItem> English (Male) : Mr. Bean</DropdownItem>
-                  </DropdownMenu>
-                </ButtonDropdown>
-                <Container fluid className="mx-auto">
-                  <Row className=" mx-auto mt-3">
-                    <Button className="prev m-0 px-5 mx-auto btn-xs shdadow-lg rounded-pill">
-                      <strong>Preview</strong>
-                    </Button>
-
-                    <ReactAudioPlayer
-                      className="m-0 px-auto mx-auto"
-                      src="/assets/test.mp3"
-                      autoPlay
-                      controls
-                    />
-                  </Row>
-                </Container>
-              </CardBody>
-            </Card>
-          </Col>
-
-          <Col>
-            <img
-              className="robot"
-              src="/assets/image/robot2.png"
-              width="100% "
-              alt="robot"
-            />
-          </Col>
-        </Row>
-      </Container>
-    </div>
+                <i className="text-danger fas fa-microphone"></i>
+              </Button>
+              {listening && <div>Go ahead I'm listening</div>}
+            </CardBody>
+          </Card>
+        </Container>
+      </header>
+    </>
   );
 }

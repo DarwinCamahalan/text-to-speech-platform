@@ -1,9 +1,25 @@
+@import "./Nav";
 @import "./Main";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: rgb(43, 43, 43);
+  background: radial-gradient(
+    circle,
+    rgba(43, 43, 43, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-size: cover;
+}
+footer {
+  background: #fff;
+}
+
 a:hover {
   transform: scale(1.05);
+  transition: all 0.2s ease;
 }
