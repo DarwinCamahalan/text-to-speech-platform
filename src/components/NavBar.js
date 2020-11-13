@@ -45,11 +45,16 @@ export default function NavBar() {
       expand="md"
     >
       <Container className="nav">
-        <NavbarBrand href="/" style={{ fontFamily: "Quantico, sans-serif" }}>
-          <h3>
+        <NavbarBrand
+          className="brand pt-3"
+          href="/"
+          style={{ fontFamily: "Quantico, sans-serif" }}
+        >
+          <h2>
             {" "}
-            <strong>Text to Speech</strong>
-          </h3>
+            <strong>Text to Speech</strong>{" "}
+            <img className="pb-1" src="/logo.png" alt="logo" width="60px" />
+          </h2>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse className="text-center" isOpen={isOpen} navbar>
@@ -60,7 +65,8 @@ export default function NavBar() {
                 data-page="about"
                 href="/about"
               >
-                About
+                About{" "}
+                <i style={{ fontSize: "20px" }} className="fas fa-robot"></i>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -69,7 +75,11 @@ export default function NavBar() {
                 data-page="team"
                 href="/team"
               >
-                Team
+                Team{" "}
+                <i
+                  style={{ fontSize: "20px" }}
+                  className="fas fa-user-friends"
+                ></i>
               </NavLink>
             </NavItem>
 
@@ -80,6 +90,10 @@ export default function NavBar() {
                 href="/contact"
               >
                 Contact
+                <i
+                  style={{ fontSize: "20px" }}
+                  className="fas fa-phone ml-2"
+                ></i>
               </NavLink>
             </NavItem>
           </Nav>

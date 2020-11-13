@@ -4,17 +4,24 @@
 }
 
 .navtxt a:hover {
-  background: #000000;
+  background: #2193b0;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#0f9b0f), to(#000000));
-  background: linear-gradient(to right, #0f9b0f, #000000);
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white !important;
   border-radius: 20px;
 }
 
 .navtxt a {
   padding: 10px 20px !important;
+}
+
+@media (max-width: 768px) {
+  .brand h2 {
+    font-size: 20px !important;
+  }
 }
 
 header {
@@ -26,13 +33,91 @@ header {
   padding: 0px 30px;
 }
 
+.container .robot {
+  width: 45%;
+  height: 100vh;
+  float: left;
+  margin: 0px 0px 0px 0px;
+}
+
 .container #textInput {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
   border: 0px !important;
+  height: 25vh;
   border-bottom: 2px #000 solid !important;
   border-radius: 0;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   resize: none;
+  color: black;
+}
+
+.container .play {
+  border-radius: 50px !important;
+  color: #252525 !important;
+  font-size: 35px;
+  padding: 5px 20px !important;
+  margin: 5px 50px !important;
+}
+
+.container .mic {
+  border-radius: 50px !important;
+  color: #252525 !important;
+  font-size: 35px;
+  padding: 5px 30px !important;
+}
+
+.container .play:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: white !important;
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container .mic:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: white !important;
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (min-width: 1000px) {
+  .card {
+    left: 23%;
+    width: 55%;
+  }
+  .mobile-view {
+    position: absolute;
+  }
+  .robot:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1000px) {
+  .mobile-view {
+    position: relative;
+    z-index: 1;
+  }
+  .robot {
+    display: none;
+  }
 }
 
 * {

@@ -23,11 +23,16 @@ export default function Main() {
   });
   return (
     <>
-      <header>
-        <Container className="container py-5 mx-auto">
+      <header className="container mx-auto">
+        <Container fluid className="mobile-view container mx-auto m-0 p-0">
           <Card className="card">
             <FormGroup>
-              <Label for="textInput">Type Text Here *</Label>
+              <Label for="textInput">
+                <h5 className="py-3">
+                  Input Text Here or Click the{" "}
+                  <i className="fas fa-microphone px-1"></i> icon.
+                </h5>
+              </Label>
               <Input
                 type="textarea"
                 name="text"
@@ -36,19 +41,33 @@ export default function Main() {
                 onChange={(e) => setValue(e.target.value)}
               />
             </FormGroup>
-            <CardBody>
-              <Button className="play" onClick={() => speak({ text: value })}>
-                <i className="text-dark fas fa-play"></i>
+            {listening && (
+              <h6>
+                Speak now, Im listening{" "}
+                <i className="text-danger fas fa-volume-up"></i>
+              </h6>
+            )}
+            <CardBody className="mx-auto text-center m-0 p-0">
+              <Button
+                className="play rounded-circle border-0 shadow-none text-center bg-transparent"
+                onClick={() => speak({ text: value })}
+              >
+                <i className="fas fa-play"></i>
               </Button>
-              <Button className="mic" onMouseDown={listen} onMouseUp={stop}>
+              <Button
+                className="play rounded-circle border-0 shadow-none text-center bg-transparent"
+                onMouseDown={listen}
+                onMouseUp={stop}
+              >
                 {" "}
-                <i className="text-danger fas fa-microphone"></i>
+                <i className="fas fa-microphone"></i>
               </Button>
-              {listening && <div>Go ahead I'm listening</div>}
             </CardBody>
           </Card>
         </Container>
+        <img src="/assets/image/robot2.png" alt="robot" className="robot" />
       </header>
+      <hr />
     </>
   );
 }

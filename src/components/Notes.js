@@ -14,9 +14,14 @@ export default function Notes() {
     <>
       <div>
         <Container className="py-5 my-5">
+          <h1 className="text-white text-center">Coming Soon! </h1>
+          <h4 className="text-white text-center">
+            More Features to Come{" "}
+            <i style={{ fontSize: "30px" }} className="fas fa-robot"></i>
+          </h4>
           <Card>
             <FormGroup>
-              <Label for="textInput">Text Area</Label>
+              <Label for="textInput"></Label>
               <Input
                 type="textarea"
                 name="text"
@@ -25,8 +30,12 @@ export default function Notes() {
                 onChange={(event) => setValue(event.target.value)}
               />
 
-              <Button id="btnSpeak" onMouseDown={listen} onMouseUp={stop}>
-                Speak
+              <Button
+                className="play rounded-circle border-0 shadow-none text-center bg-transparent"
+                onMouseDown={listen}
+                onMouseUp={stop}
+              >
+                <i className="fas fa-microphone"></i>
               </Button>
               {listening && <div>Go ahead I'm listening</div>}
             </FormGroup>

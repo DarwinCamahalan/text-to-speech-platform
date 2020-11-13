@@ -2,21 +2,28 @@
   font-family: "Press Start 2P", cursive;
   color: #000 !important;
   a:hover {
-    background: #000000; /* fallback for old browsers */
+    background: #2193b0; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
-      #0f9b0f,
-      #000000
+      #6dd5ed,
+      #2193b0
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
       to right,
-      #0f9b0f,
-      #000000
+      #6dd5ed,
+      #2193b0
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    color: white !important;
     border-radius: 20px;
   }
   a {
     padding: 10px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand h2 {
+    font-size: 20px !important;
   }
 }
