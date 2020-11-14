@@ -1,42 +1,67 @@
 header {
   height: 100vh;
+  position: relative;
+  width: 100%;
 }
 
 .container {
-  .card {
-    z-index: 1;
-    margin-top: 100px !important;
-    padding: 0px 30px;
-    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  .input-bg {
+    padding-top: 5%;
+    min-height: 100vh;
+    position: relative;
+    .card {
+      height: 20%;
+      z-index: 3;
+      padding: 20px 30px;
+      border-radius: 40px !important;
+      -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+      box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+      opacity: 0.8 !important;
+      background-image: url("./img/g4.gif");
+      background-position: center;
+      background-size: cover;
+      opacity: 0.9 !important;
+    }
+    .card:hover {
+      transform: scale(1.01);
+      transition: all 0.2s ease;
+    }
   }
-  .card:hover {
-    transform: scale(1.01);
-    transition: all 0.2s ease;
-  }
+
   .robot {
-    z-index: 0;
+    z-index: 1;
     position: absolute;
-    width: 485px;
+    right: 680px;
+    height: 90vh;
+    bottom: 50px;
+    float: left;
+  }
+  .robot3 {
+    z-index: 1;
+    position: absolute;
+    right: 770px;
+    top: 20px;
+    width: 40%;
     height: 100vh;
     float: left;
-    margin: 0px 0px 0px 0px;
   }
 
   #textInput {
+    background: none !important;
+    border-radius: 20px !important;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     border: 0px !important  ;
-    height: 25vh;
-    border-bottom: 2px #000 solid !important;
-    border-radius: 0;
+    height: 30vh;
+    border-bottom: 4px rgb(255, 255, 255) solid !important;
+    border-radius: 0 !important;
     box-shadow: none !important;
     resize: none;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   .play {
     border-radius: 50px !important;
-    color: rgb(37, 37, 37) !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 35px;
     padding: 5px 20px !important;
     margin: 5px 50px !important;
@@ -50,7 +75,7 @@ header {
   .play:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     background: #2193b0; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
@@ -65,7 +90,7 @@ header {
   }
   .mic:hover {
     transform: scale(1.1);
-    color: white !important;
+    color: red !important;
     background: #2193b0; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
@@ -80,7 +105,7 @@ header {
   }
   .micicon:hover {
     transform: scale(1.2);
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     background: #2193b0; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
@@ -95,19 +120,9 @@ header {
     padding: 5px !important;
     border-radius: 10px;
   }
-  .micicon2 {
-    float: right;
-    margin-left: 100px !important;
-  }
 }
+
 @media (min-width: 1000px) {
-  .card {
-    left: 25%;
-    width: 55%;
-  }
-  .mobile-view {
-    position: absolute;
-  }
   .robot:hover {
     transition: all 0.5s ease;
     transform: scale(1.05);
@@ -116,16 +131,25 @@ header {
     padding: 0px 40px !important;
     margin: 0px 40px !important;
   }
+  .card {
+    width: 55%;
+    left: 25%;
+  }
 }
 @media (max-width: 1000px) {
-  .mobile-view {
-    position: relative;
-    z-index: 1;
-  }
   .robot {
-    display: none;
+    left: 1px;
+    width: 99%;
+  }
+  .robot3 {
+    left: 30px;
+    width: 100%;
   }
   .robot2 {
     width: 100% !important;
+  }
+
+  .card {
+    width: 100%;
   }
 }
