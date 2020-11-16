@@ -52,7 +52,8 @@ export default function NavBar() {
               <NavLink
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="about"
-                href="/about"
+                // href="/about"
+                href="/take-notes"
               >
                 About{" "}
                 <i style={{ fontSize: "20px" }} className="fas fa-robot"></i>
@@ -62,7 +63,8 @@ export default function NavBar() {
               <NavLink
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="team"
-                href="/team"
+                // href="/team"
+                href="/take-notes"
               >
                 Team{" "}
                 <i
@@ -76,7 +78,8 @@ export default function NavBar() {
               <NavLink
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="contact"
-                href="/contact"
+                // href="/contact"
+                href="/take-notes"
               >
                 Contact
                 <i

@@ -23,6 +23,9 @@
 
 @media (max-width: 1200px) {
   .player {
-    display: none;
+    width: 70%;
+    .music {
+      width: 100%;
+    }
   }
 }

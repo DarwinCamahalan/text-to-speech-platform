@@ -1,19 +1,24 @@
-import React, { useState } from "react";
-import { useSpeechRecognition } from "react-speech-kit";
+import React from "react";
+// import { useSpeechRecognition } from "react-speech-kit";
 import "../styles/style.css";
-import { Container, Card, FormGroup, Label, Input, Button } from "reactstrap";
-
+// import { Container, Card, FormGroup, Label, Input, Button } from "reactstrap";
+import { Container } from "reactstrap";
 export default function VTT() {
-  const [value, setValue] = useState("");
-  const { listen, listening, stop } = useSpeechRecognition({
-    onResult: (result) => {
-      setValue(result);
-    },
-  });
+  // const [value, setValue] = useState("");
+  // const { listen, listening, stop } = useSpeechRecognition({
+  //   onResult: (result) => {
+  //     setValue(result);
+  //   },
+  // });
   return (
     <>
       <div>
-        <Container className="pt-5 mt-5 mx-auto">
+        <Container className="py-5 mt-5 text-center text-white vh-100">
+          <h1>Our Product are currently being Built.</h1>
+          <h3>We're Excited to show it though.</h3>
+          <i className="fas fa-tools pt-5" style={{ fontSize: "1000%" }}></i>
+        </Container>
+        {/* <Container className="pt-5 mt-5 mx-auto">
           <h1 className="text-white text-center">Coming Soon! </h1>
           <h4 className="text-white text-center">
             More Features to Come{" "}
@@ -42,7 +47,7 @@ export default function VTT() {
           </Card>
 
           <img src="/assets/image/robot3.png" alt="robot" className="robot2" />
-        </Container>
+        </Container> */}
       </div>
     </>
   );

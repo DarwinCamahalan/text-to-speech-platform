@@ -1,8 +1,8 @@
 .header3 {
-  background-image: url("./img/g1.gif");
+  background-image: url("./img/g3.gif");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top;
   margin: 2% 0;
   .container {
     width: 100%;
@@ -82,14 +82,14 @@
     filter: hue-rotate(360deg);
     transition: all 1s ease;
     transform: scale(1.2);
-    background-image: url("./img/g7.gif") !important;
+    background-image: url("./img/g5.gif") !important;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;
   }
   .bg:hover {
-    filter: hue-rotate(280deg);
+    filter: hue-rotate(150deg);
     transition: all 3s ease;
   }
 }

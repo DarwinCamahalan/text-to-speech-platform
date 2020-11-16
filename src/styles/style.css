@@ -58,7 +58,6 @@ nav p {
   display: flex;
   margin-top: 6%;
   height: 100vh;
-  padding: 0 8%;
 }
 
 .containertts .input-bg {
@@ -210,6 +209,9 @@ nav p {
   .input-bg {
     padding-left: 10%;
     margin-right: 30%;
+  }
+  .containertts {
+    padding: 0 8%;
   }
 }
 
@@ -466,10 +468,10 @@ header .bg:hover {
 }
 
 .header3 {
-  background-image: url("./img/g1.gif");
+  background-image: url("./img/g3.gif");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top;
   margin: 2% 0;
 }
 
@@ -570,7 +572,7 @@ header .bg:hover {
   transition: all 1s ease;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  background-image: url("./img/g7.gif") !important;
+  background-image: url("./img/g5.gif") !important;
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -578,8 +580,8 @@ header .bg:hover {
 }
 
 .header3 .bg:hover {
-  -webkit-filter: hue-rotate(280deg);
-          filter: hue-rotate(280deg);
+  -webkit-filter: hue-rotate(150deg);
+          filter: hue-rotate(150deg);
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
 }
@@ -622,7 +624,10 @@ header .bg:hover {
 
 @media (max-width: 1200px) {
   .player {
-    display: none;
+    width: 70%;
+  }
+  .player .music {
+    width: 100%;
   }
 }
 

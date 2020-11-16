@@ -9,23 +9,24 @@ export default function Header3() {
         <div className="container">
           <div className="text">
             <div className="bg">
-              <h1>Voice to Text 2077</h1>
+              <h1>Darpax Voice Assistant 2077</h1>
               <h5>
-                The Best to the best Voice to Text Software, It has an accuracy
-                level of over 9000! It can hear you from 700 miles away. and
-                precisely knows what you said.
+                The Smartest Voice Assistant in the whole Universe! It can
+                predict what your saying before you even talk to it. The Apex
+                Voice Assistant ever.
               </h5>
               <i className="fa fa-medal text-center">
                 <p className="text-left mx-5">
-                  I love this Product, It's so good that we might file
-                  bankruptcy in just 3 months because of this voice to text
-                  software <br /> <br /> - Bill Gates
+                  Our Company and Products are Nothing to this Voice Assistant,
+                  I'm Definitely Afraid of Darpax Voice Assistant. <br /> <br />{" "}
+                  - Elon Musk
                 </p>
               </i>
               <i className="fa fa-trophy">
                 <p className="text-left mx-5">
-                  Bruh, I'm Speechless 10 out of 10 Software so good! <br />{" "}
-                  <br /> - Jeff Bezos
+                  I've Seen the Most Advance Voice Assistant in the entire
+                  Universe! I can peacefully Die now. <br /> <br /> - Mark
+                  Zuckerberg
                 </p>
               </i>
               <div className="text-left pb-3 pl-5">
