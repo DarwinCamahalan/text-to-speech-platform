@@ -2,10 +2,10 @@ import React from "react";
 import "../styles/style.css";
 import { Button } from "reactstrap";
 
-export default function Header2() {
+export default function Header3() {
   return (
     <>
-      <div className="header2">
+      <div className="header3">
         <div className="container">
           <div className="text">
             <div className="bg">
@@ -37,7 +37,7 @@ export default function Header2() {
             </div>
           </div>
           <div className="header-robot mr-5">
-            <img src="/assets/image/robot5.png" alt="robot" width="100%" />
+            <img src="/assets/image/robot6.png" alt="robot" width="100%" />
           </div>
         </div>
       </div>

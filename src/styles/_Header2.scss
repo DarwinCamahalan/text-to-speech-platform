@@ -1,19 +1,19 @@
 .header2 {
-  background-image: url("./img/g6.gif");
+  background-image: url("./img/g1.gif");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-
+  margin: 2% 0;
   .container {
     width: 100%;
     display: flex;
 
     .text {
       z-index: 2;
-      margin-top: 5%;
+
       order: 2;
       flex: 2;
-      color: rgb(0, 0, 0);
+      color: rgb(15, 0, 0);
 
       .bg {
         background: #2193b0; /* fallback for old browsers */
@@ -73,17 +73,20 @@
       width: 100%;
       flex: 1;
       height: 100vh;
+      background-image: url("./img/g6.gif");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
   .header-robot:hover {
-    filter: hue-rotate(280deg);
-    transition: all 0.7s ease;
+    filter: hue-rotate(360deg);
+    transition: all 1s ease;
     transform: scale(1.2);
     background-image: url("./img/g7.gif") !important;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-
     z-index: 1;
   }
   .bg:hover {

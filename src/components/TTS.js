@@ -65,7 +65,7 @@ export default function TTS() {
         </div>
         <div className="robot">
           {" "}
-          <img src="/assets/image/robot2.png" alt="robot" />
+          <img src="/assets/image/robot4.png" alt="robot" />
         </div>
       </div>
       <hr />

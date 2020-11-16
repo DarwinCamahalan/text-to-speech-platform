@@ -32,20 +32,25 @@
     z-index: 1;
     bottom: 35%;
 
-    background-image: url("./img/g7.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     img {
-      top: 5%;
+      top: 10%;
       position: absolute;
-      right: 1%;
+      right: 4%;
       background-image: url("./img/g2.gif");
       background-repeat: no-repeat;
       background-position: top;
       background-size: contain;
       width: auto;
-      height: 70vh;
+      height: 80vh;
+    }
+    img:hover {
+      filter: hue-rotate(360deg);
+      transition: all 2s ease;
+      transform: scale(1.3);
+      background-image: url("./img/g7.gif");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
   }
   .robot:hover {
