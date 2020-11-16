@@ -15,7 +15,7 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     border-radius: 20px;
   }
   a {
@@ -23,8 +23,33 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .brand h2 {
     font-size: 20px !important;
+  }
+  nav {
+    p {
+      display: none;
+    }
+  }
+}
+nav {
+  background: none;
+  font-family: "Nosifer", cursive;
+  position: relative;
+  p {
+    font-family: "Goldman", cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    position: absolute;
+    top: 35px;
+    left: 390px;
+  }
+}
+
+.brand:hover {
+  color: red !important;
+  p {
+    left: 100%;
   }
 }

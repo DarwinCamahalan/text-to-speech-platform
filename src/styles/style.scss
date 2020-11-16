@@ -1,28 +1,46 @@
 @import "./Nav";
 @import "./Main";
+@import "./Header";
+@import "./TakeNotes";
+@import "./Player";
+@import "./Variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background: rgb(43, 43, 43);
-  background: radial-gradient(
-    circle,
-    rgba(43, 43, 43, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background-size: cover;
-  background-image: url("./img/g5.gif");
-  background-position: left;
-}
-
-footer {
-  background: #fff;
-}
-
 a:hover {
   transform: scale(1.05);
   transition: all 0.2s ease;
+}
+
+body {
+  @extend %bg;
+}
+
+footer {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  color: white !important;
+
+  a {
+    color: black !important;
+  }
+}
+footer:hover {
+  filter: hue-rotate(360deg);
+  transition: all 5s ease;
 }

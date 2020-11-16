@@ -1,0 +1,28 @@
+.player {
+  position: fixed;
+  top: 87%;
+  z-index: 5;
+  width: 20%;
+
+  .music {
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    border-radius: 40px !important;
+    background-image: url("./img/g4.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+    filter: hue-rotate(60deg);
+  }
+  .music:hover {
+    filter: hue-rotate(360deg);
+    transition: all 5s ease;
+  }
+}
+
+@media (max-width: 1200px) {
+  .player {
+    display: none;
+  }
+}

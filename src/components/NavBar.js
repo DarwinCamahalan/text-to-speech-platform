@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import classnames from "classnames";
 import "../styles/style.css";
 import {
@@ -23,24 +23,11 @@ export default function NavBar() {
     }
   };
 
-  useEffect(() => {
-    const onScroll = () => {
-      const scrollCheck = window.scrollY < 10;
-      setIsOpen(false);
-
-      if (scrollCheck !== scroll) {
-        setScroll(scrollCheck);
-      }
-    };
-    document.addEventListener("scroll", onScroll);
-    return () => document.removeEventListener("scroll", onScroll);
-  }, [scroll, setScroll]);
-
   return (
     <Navbar
       className={classnames(
-        "m-0 p-0",
-        scroll ? "bg-transparent" : "bg-light shadow-lg"
+        "m-0 p-0 nav ",
+        scroll ? "bg-transparent" : "bg-transparent"
       )}
       style={!scroll ? { opacity: 0.95 } : null}
       dark={scroll}
@@ -48,23 +35,22 @@ export default function NavBar() {
       expand="md"
     >
       <Container fluid className="nav mx-3">
-        <NavbarBrand
-          className="brand pt-3"
-          href="/"
-          style={{ fontFamily: "Quantico, sans-serif" }}
-        >
+        <NavbarBrand className="brand pt-4 text-white" href="/">
           <h2>
             {" "}
-            <strong>Text to Speech</strong>{" "}
-            <img className="pb-1" src="/favicon.png" alt="logo" width="60px" />
+            <strong>Text to Speech</strong>
           </h2>
+          <p>2077</p>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler
+          onClick={toggle}
+          style={{ background: "#fff", color: "#000" }}
+        />
         <Collapse className="text-center py-1" isOpen={isOpen} navbar>
           <Nav className="navtxt ml-auto" navbar>
             <NavItem>
               <NavLink
-                className={classnames(scroll ? "text-white" : "text-dark")}
+                className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="about"
                 href="/about"
               >
@@ -74,7 +60,7 @@ export default function NavBar() {
             </NavItem>
             <NavItem>
               <NavLink
-                className={classnames(scroll ? "text-white" : "text-dark")}
+                className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="team"
                 href="/team"
               >
@@ -88,7 +74,7 @@ export default function NavBar() {
 
             <NavItem>
               <NavLink
-                className={classnames(scroll ? "text-white" : "text-dark")}
+                className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="contact"
                 href="/contact"
               >
