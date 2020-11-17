@@ -215,6 +215,13 @@ nav p {
   }
 }
 
+header {
+  background-image: url("./img/g6.gif");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 header .container {
   margin-top: 5%;
   width: 100%;
@@ -232,6 +239,7 @@ header .container .text {
 }
 
 header .container .text .bg {
+  opacity: 0.9 !important;
   background: #2193b0;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */

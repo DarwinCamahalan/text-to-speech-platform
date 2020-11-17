@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 // import { useSpeechRecognition } from "react-speech-kit";
 import "../styles/style.css";
 // import { Container, Card, FormGroup, Label, Input, Button } from "reactstrap";
@@ -13,6 +14,9 @@ export default function VTT() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Voice to Text 2077</title>
+        </Helmet>
         <Container className="py-5 mt-5 text-center text-white vh-100">
           <h1>Our Product are currently being Built.</h1>
           <h3>We're Excited to show it though.</h3>

@@ -1,4 +1,8 @@
 header {
+  background-image: url("./img/g6.gif");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
   .container {
     margin-top: 5%;
     width: 100%;
@@ -9,6 +13,7 @@ header {
       color: rgb(0, 0, 0);
 
       .bg {
+        opacity: 0.9 !important;
         background: #2193b0; /* fallback for old browsers */
         background: -webkit-linear-gradient(
           to right,

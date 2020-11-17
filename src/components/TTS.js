@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useSpeechSynthesis, useSpeechRecognition } from "react-speech-kit";
 
 import "../styles/style.css";
@@ -16,6 +17,9 @@ export default function TTS() {
   return (
     <>
       <div className="containertts">
+        <Helmet>
+          <title>Text to Speech 2077</title>
+        </Helmet>
         <div className="input-bg">
           <Card className="card ">
             <FormGroup>
