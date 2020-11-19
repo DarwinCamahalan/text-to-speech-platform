@@ -1,0 +1,104 @@
+.header4 {
+  background-image: url("./img/g8.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  margin: 2% 0;
+  .container {
+    width: 100%;
+    display: flex;
+
+    .text {
+      z-index: 2;
+      order: 2;
+      flex: 2;
+      color: rgb(0, 0, 0);
+
+      .bg {
+        background: #2193b0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #6dd5ed,
+          #2193b0
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #6dd5ed,
+          #2193b0
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+        box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+        border-radius: 40px;
+        margin: 0px 20px;
+        opacity: 0.9;
+      }
+      h1 {
+        padding-top: 20px;
+        margin-left: 25px;
+        margin-bottom: 30px;
+      }
+      h5 {
+        padding: 0px 50px;
+        margin-bottom: 30px;
+      }
+      i {
+        display: flex;
+        flex: 1;
+        font-size: 300%;
+        margin: 4% 10%;
+
+        p {
+          font-size: 15px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 700;
+        }
+      }
+      .btn {
+        background: none;
+        color: black;
+        border-color: black;
+        box-shadow: none;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+
+    .header-robot {
+      z-index: 1;
+      order: 1;
+      position: relative;
+      width: 100%;
+      flex: 1;
+      height: 100vh;
+      background-image: url("./img/g6.gif");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .header-robot:hover {
+    filter: hue-rotate(360deg);
+    transition: all 1s ease;
+    transform: scale(1.2);
+    background-image: url("./img/g9.gif") !important;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    z-index: 1;
+  }
+  .bg:hover {
+    filter: hue-rotate(150deg);
+    transition: all 3s ease;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-robot {
+    display: none;
+  }
+  .container2 {
+    margin-right: 10%;
+  }
+}
