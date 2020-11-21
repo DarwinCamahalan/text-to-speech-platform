@@ -8,6 +8,14 @@ import { Card, CardBody, FormGroup, Input, Label, Button } from "reactstrap";
 
 export default function TTS() {
   const [value, setValue] = React.useState("");
+  let myaudio = new Audio("/assets/music/speak.wav");
+  const start = () => {
+    myaudio.play();
+  };
+  let myaudio2 = new Audio("/assets/music/lock.mp3");
+  const start2 = () => {
+    myaudio2.play();
+  };
   const { speak } = useSpeechSynthesis();
   const { listen, listening, stop } = useSpeechRecognition({
     onResult: (result) => {
@@ -60,6 +68,7 @@ export default function TTS() {
                 className="play rounded-circle border-0 shadow-none text-center bg-transparent"
                 onMouseDown={listen}
                 onMouseUp={stop}
+                onMouseDownCapture={start}
               >
                 {" "}
                 <i className="fas fa-microphone"></i>
@@ -69,7 +78,11 @@ export default function TTS() {
         </div>
         <div className="robot">
           {" "}
-          <img src="/assets/image/robot4.png" alt="robot" />
+          <img
+            onMouseEnter={start2}
+            src="/assets/image/robot4.png"
+            alt="robot"
+          />
         </div>
       </div>
       <hr />

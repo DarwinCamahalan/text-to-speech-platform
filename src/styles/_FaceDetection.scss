@@ -1,17 +1,18 @@
 .face {
   height: 100vh !important;
   margin: 4% 0;
-  background-image: url("./img/g3.gif");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
+  img {
+    position: absolute;
+    left: 65%;
+    z-index: -1;
+  }
 }
 
 .video {
   display: flex;
   border-radius: 40px !important;
   margin: 20px 0;
-  cursor: pointer;
+  cursor: grab;
 }
 
 @media (max-width: 768px) {

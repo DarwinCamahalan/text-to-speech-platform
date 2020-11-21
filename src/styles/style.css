@@ -756,6 +756,8 @@ header .bg:hover {
           filter: hue-rotate(360deg);
   -webkit-transition: all 5s ease;
   transition: all 5s ease;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 @media (max-width: 1200px) {
@@ -776,10 +778,12 @@ body {
 .face {
   height: 100vh !important;
   margin: 4% 0;
-  background-image: url("./img/g3.gif");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
+}
+
+.face img {
+  position: absolute;
+  left: 65%;
+  z-index: -1;
 }
 
 .video {
@@ -788,7 +792,8 @@ body {
   display: flex;
   border-radius: 40px !important;
   margin: 20px 0;
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 @media (max-width: 768px) {

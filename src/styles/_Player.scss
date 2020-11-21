@@ -18,6 +18,7 @@
   .music:hover {
     filter: hue-rotate(360deg);
     transition: all 5s ease;
+    cursor: grab;
   }
 }
 

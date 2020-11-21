@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import * as faceapi from "face-api.js";
 import { Helmet } from "react-helmet";
+import AudioPlayer from "react-h5-audio-player";
 import "../styles/style.css";
 
 export default function FaceRecognition() {
@@ -65,24 +66,45 @@ export default function FaceRecognition() {
   const videoHeight = 480;
   const videoWidth = 640;
 
+  const [isLoopable] = useState(true);
+
   return (
     <>
-      <Draggable>
-        <div className="vh-100 face">
-          <Helmet>
-            <title>Face Recognition 2077</title>
-          </Helmet>
-          <h3 className="text-center text-white">
-            {initializing
-              ? "Initializing Face Recognition 2077"
-              : "I can see your Face now Human."}
-            <i style={{ fontSize: "20px" }} className="mx-2 fas fa-robot"></i>
-          </h3>
-          <div className="video flex">
-            {" "}
-            <video ref={videoRef} autoPlay muted onPlay={handleVideoOnPlay} />
-            <canvas ref={canvasRef} className="canvas" />
+      <div className="vh-100 face">
+        <Helmet>
+          <title>Face Recognition 2077</title>
+        </Helmet>
+
+        <Draggable>
+          <div>
+            <h3 className="text-center text-white">
+              {initializing
+                ? "Initializing Face Recognition 2077"
+                : "I can see your Face now Human."}
+              <i style={{ fontSize: "20px" }} className="mx-2 fas fa-robot"></i>
+            </h3>
+
+            <div className="video flex">
+              {" "}
+              <video ref={videoRef} autoPlay muted onPlay={handleVideoOnPlay} />
+              <canvas ref={canvasRef} className="canvas" />
+            </div>
           </div>
+        </Draggable>
+      </div>
+      <audio autoPlay>
+        <source src={initializing ? "/assets/music/intro.wav" : ""} />
+      </audio>
+
+      <Draggable>
+        <div className="player">
+          <AudioPlayer
+            className="music"
+            autoPlay
+            loop={isLoopable}
+            src={initializing ? "" : "/assets/music/face-bg.mp3"}
+            onPlay={(e) => console.log("onPlay")}
+          />
         </div>
       </Draggable>
     </>
