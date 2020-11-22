@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavigationBar from "../components/NavBar";
-import MusicPlayer from "../components/MusicPlayer";
+
 import Header from "../components/Header";
 import Header2 from "../components/Header2";
 import Header3 from "../components/Header3";
@@ -12,7 +12,9 @@ export default function Home() {
   return (
     <div>
       <NavigationBar />
-      <MusicPlayer />
+      <audio autoPlay loop>
+        <source src="/assets/music/electric.mp3" />
+      </audio>
       <Header />
       <Header2 />
       <Header3 />

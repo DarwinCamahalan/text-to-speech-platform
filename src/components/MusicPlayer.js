@@ -15,9 +15,9 @@ export default function MusicPlayer() {
           <AudioPlayer
             className="music"
             autoPlay
-            volume="0.4"
+            volume="0.2"
             loop={isLoopable}
-            src="/assets/music/electric.mp3"
+            src="/assets/music/tts-bg.mp3"
             onPlay={(e) => console.log("onPlay")}
           />
         </div>

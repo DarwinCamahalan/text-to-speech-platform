@@ -12,8 +12,8 @@ export default function TTS() {
   const start = () => {
     myaudio.play();
   };
-  let myaudio2 = new Audio("/assets/music/1.mp3");
-  let myaudio3 = new Audio("/assets/music/warn3.wav");
+  let myaudio2 = new Audio("/assets/music/warn3.wav");
+  let myaudio3 = new Audio("/assets/music/warn.wav");
   const start2 = () => {
     myaudio2.play();
     myaudio3.play();
@@ -26,7 +26,7 @@ export default function TTS() {
   });
   return (
     <>
-      <div className="containertts">
+      <header className="containertts">
         <Helmet>
           <title>Text to Speech 2077</title>
         </Helmet>
@@ -86,7 +86,7 @@ export default function TTS() {
             alt="robot"
           />
         </div>
-      </div>
+      </header>
       <hr />
     </>
   );

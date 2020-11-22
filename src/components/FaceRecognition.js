@@ -69,7 +69,7 @@ export default function FaceRecognition() {
   const [isLoopable] = useState(true);
 
   return (
-    <>
+    <header>
       <div className="vh-100 face">
         <Helmet>
           <title>Face Recognition 2077</title>
@@ -77,12 +77,15 @@ export default function FaceRecognition() {
 
         <Draggable>
           <div>
-            <h3 className="text-center text-white">
+            <h2
+              className="text-center "
+              style={{ fontFamily: "VT323", color: "#00e804" }}
+            >
               {initializing
                 ? "Initializing Face Recognition 2077"
                 : "I can see your Face now Human."}
               <i style={{ fontSize: "20px" }} className="mx-2 fas fa-robot"></i>
-            </h3>
+            </h2>
 
             <div className="video flex">
               {" "}
@@ -107,6 +110,6 @@ export default function FaceRecognition() {
           />
         </div>
       </Draggable>
-    </>
+    </header>
   );
 }
