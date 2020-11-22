@@ -3,13 +3,11 @@ import "../styles/style.css";
 import { Button } from "reactstrap";
 
 export default function Header2() {
-  let myaudio = new Audio("/assets/music/vtt.wav");
-  const start = () => {
-    myaudio.play();
-  };
   let myaudio2 = new Audio("/assets/music/1.mp3");
-  const start2 = () => {
+  let myaudio3 = new Audio("/assets/music/warn2.wav");
+  const start = () => {
     myaudio2.play();
+    myaudio3.play();
   };
   return (
     <>
@@ -38,11 +36,7 @@ export default function Header2() {
               </i>
               <div className="text-left pb-3 pl-5">
                 {" "}
-                <Button
-                  onMouseEnter={start}
-                  className="btn rounded-pill"
-                  href="/take-notes"
-                >
+                <Button className="btn rounded-pill" href="/take-notes">
                   <strong>Start Now</strong>
                 </Button>
               </div>
@@ -50,7 +44,7 @@ export default function Header2() {
           </div>
           <div className="header-robot mr-5">
             <img
-              onMouseEnter={start2}
+              onMouseEnter={start}
               className="robotimg"
               src="/assets/image/robot5.png"
               alt="robot"

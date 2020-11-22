@@ -3,13 +3,11 @@ import "../styles/style.css";
 import { Button } from "reactstrap";
 
 export default function Header4() {
-  let myaudio = new Audio("/assets/music/face.wav");
-  const start = () => {
-    myaudio.play();
-  };
   let myaudio2 = new Audio("/assets/music/1.mp3");
-  const start2 = () => {
+  let myaudio3 = new Audio("/assets/music/warn4.wav");
+  const start = () => {
     myaudio2.play();
+    myaudio3.play();
   };
   return (
     <>
@@ -25,25 +23,19 @@ export default function Header4() {
               </h5>
               <i className="fa fa-medal text-center">
                 <p className="text-left mx-5">
-                  Our Company and Products are Nothing to this Voice Assistant,
-                  I'm Definitely Afraid of Darpax Voice Assistant. <br /> <br />{" "}
-                  - Elon Musk
+                  It so accurate it can predict my movements 5 seconds before I
+                  move! Amazing Face Recognition <br /> <br /> - Vladimir Putin
                 </p>
               </i>
               <i className="fa fa-trophy">
                 <p className="text-left mx-5">
-                  I've Seen the Most Advance Voice Assistant in the entire
-                  Universe! I can peacefully Die now. <br /> <br /> - Mark
-                  Zuckerberg
+                  All I can say is this face recognition is so fucking good!{" "}
+                  <br /> <br /> - Guy from Street
                 </p>
               </i>
               <div className="text-left pb-3 pl-5">
                 {" "}
-                <Button
-                  onMouseEnter={start}
-                  className="btn rounded-pill"
-                  href="/face-detection"
-                >
+                <Button className="btn rounded-pill" href="/face-detection">
                   <strong>Start Now</strong>
                 </Button>
               </div>
@@ -51,7 +43,7 @@ export default function Header4() {
           </div>
           <div className="header-robot mr-5">
             <img
-              onMouseEnter={start2}
+              onMouseEnter={start}
               src="/assets/image/robot3.png"
               alt="robot"
               width="100%"

@@ -15,7 +15,7 @@ export default function MusicPlayer() {
           <AudioPlayer
             className="music"
             autoPlay
-            volume="0.3"
+            volume="0.2"
             loop={isLoopable}
             src="/assets/music/electric.mp3"
             onPlay={(e) => console.log("onPlay")}

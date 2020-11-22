@@ -12,9 +12,11 @@ export default function TTS() {
   const start = () => {
     myaudio.play();
   };
-  let myaudio2 = new Audio("/assets/music/lock.mp3");
+  let myaudio2 = new Audio("/assets/music/1.mp3");
+  let myaudio3 = new Audio("/assets/music/warn3.wav");
   const start2 = () => {
     myaudio2.play();
+    myaudio3.play();
   };
   const { speak } = useSpeechSynthesis();
   const { listen, listening, stop } = useSpeechRecognition({
