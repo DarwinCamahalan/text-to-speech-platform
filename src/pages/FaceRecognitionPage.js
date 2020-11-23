@@ -2,6 +2,7 @@ import React from "react";
 
 import NavigationBar from "../components/NavBar";
 import FaceRecognition from "../components/FaceRecognition";
+import Products from "../components/Products";
 import Footer from "../components/Footer";
 
 export default function FaceRecognitionPage() {
@@ -9,6 +10,7 @@ export default function FaceRecognitionPage() {
     <div>
       <NavigationBar />
       <FaceRecognition />
+      <Products />
       <Footer />
     </div>
   );
