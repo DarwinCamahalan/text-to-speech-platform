@@ -136,16 +136,16 @@ export default function Team() {
           <Row className="py-5 mt-5">
             {team2.map((team2, index) => (
               <Col key={index} xl="3" className="team-image">
-                <a href={team2.to}>
-                  <img
-                    onMouseEnter={start2}
-                    onMouseLeave={stop2}
-                    className="mx-auto d-block"
-                    src={team2.img}
-                    alt={team2.img}
-                  />
-                  <p className="text-center">{team2.name}</p>
-                </a>
+                {/* <a href={team2.to}> */}
+                <img
+                  onMouseEnter={start2}
+                  onMouseLeave={stop2}
+                  className="mx-auto d-block"
+                  src={team2.img}
+                  alt={team2.img}
+                />
+                <p className="text-center">{team2.name}</p>
+                {/* </a> */}
               </Col>
             ))}
           </Row>
