@@ -11,12 +11,12 @@ export default function Products() {
     {
       title: "Voice to Text 2077",
       img: "/assets/image/robot5.png",
-      to: "/take-notes",
+      to: "/being-built",
     },
     {
-      title: "Darpax Voice Recognition 2077",
+      title: "Voice Recognition 2077",
       img: "/assets/image/robot7.png",
-      to: "/take-notes",
+      to: "/being-built",
     },
     {
       title: "Face Recognition 2077",
@@ -39,11 +39,10 @@ export default function Products() {
                   <CardImg src={products.img} className="robots" />
                 </Card>
                 <p
-                  className="pt-3 "
+                  className="probot pt-3"
                   style={{
                     fontFamily: "VT323",
                     color: "#00e804",
-                    fontSize: "20px",
                   }}
                 >
                   {products.title}

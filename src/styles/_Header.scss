@@ -104,4 +104,29 @@ header {
   .header-robot {
     display: none;
   }
+  h1 {
+    font-size: 20px !important;
+    font-weight: bolder !important;
+  }
+  h5 {
+    font-size: 12px !important;
+  }
+
+  p {
+    font-size: 11px !important;
+    font-weight: normal !important;
+  }
+  .probot {
+    font-size: 20px !important;
+  }
+
+  i {
+    font-size: 25px !important;
+  }
+  strong {
+    font-size: 15px !important;
+  }
+  .robot {
+    display: none;
+  }
 }

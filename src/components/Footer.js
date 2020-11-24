@@ -26,21 +26,21 @@ export default function Footer() {
                 <NavLink
                   className="d-block d-lg-inline ml-lg-5 py-3 text-center text-lg-left"
                   // to="/about"
-                  to="/take-notes"
+                  to="/being-built"
                 >
                   About
                 </NavLink>
                 <NavLink
                   className="d-block d-lg-inline ml-lg-5 py-3 text-center text-lg-left"
                   // to="/terms-of-service"
-                  to="/take-notes"
+                  to="/being-built"
                 >
                   Terms of Service
                 </NavLink>
                 <NavLink
                   className="d-block d-lg-inline ml-lg-5 py-3 text-center text-lg-left"
                   // to="/privacy-policy"
-                  to="/take-notes"
+                  to="/being-built"
                 >
                   Privacy Policy
                 </NavLink>

@@ -30,8 +30,8 @@ export default function Header() {
               </i>
               <i className="fa fa-trophy">
                 <p className="text-left mx-5">
-                  It can Hack NASA using the "Darpax" Voice Recognition. <br />{" "}
-                  <br /> - Google
+                  It can Hack NASA using this Text to Speech 2077 software.{" "}
+                  <br /> <br /> - Google
                 </p>
               </i>
               <div className="text-left pb-3 pl-5">

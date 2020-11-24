@@ -15,7 +15,7 @@ export default function Header3() {
         <div className="container">
           <div className="text">
             <div className="bg">
-              <h1>Darpax Voice Assistant 2077</h1>
+              <h1>Voice Assistant 2077</h1>
               <h5>
                 The Smartest Voice Assistant in the whole Universe! It can
                 predict what your saying before you even talk to it. The Apex
@@ -24,8 +24,8 @@ export default function Header3() {
               <i className="fa fa-medal text-center">
                 <p className="text-left mx-5">
                   Our Company and Products are Nothing to this Voice Assistant,
-                  I'm Definitely Afraid of Darpax Voice Assistant. <br /> <br />{" "}
-                  - Elon Musk
+                  I'm Definitely Afraid of this Voice Assistant. <br /> <br /> -
+                  Elon Musk
                 </p>
               </i>
               <i className="fa fa-trophy">
@@ -37,7 +37,7 @@ export default function Header3() {
               </i>
               <div className="text-left pb-3 pl-5">
                 {" "}
-                <Button className="btn rounded-pill" href="/take-notes">
+                <Button className="btn rounded-pill" href="/being-built">
                   <strong>Start Now</strong>
                 </Button>
               </div>

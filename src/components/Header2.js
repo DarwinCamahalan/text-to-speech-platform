@@ -36,7 +36,7 @@ export default function Header2() {
               </i>
               <div className="text-left pb-3 pl-5">
                 {" "}
-                <Button className="btn rounded-pill" href="/take-notes">
+                <Button className="btn rounded-pill" href="/being-built">
                   <strong>Start Now</strong>
                 </Button>
               </div>

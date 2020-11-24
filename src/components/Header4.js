@@ -18,8 +18,7 @@ export default function Header4() {
               <h1>Face Recognition 2077</h1>
               <h5>
                 The Worlds Best of the Best Face Recognition Algorithm Ever
-                Made. It's Created by Darpax the Most Intelligent Human Being
-                Ever Lived!.
+                Made.
               </h5>
               <i className="fa fa-medal text-center">
                 <p className="text-left mx-5">

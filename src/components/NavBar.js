@@ -53,7 +53,7 @@ export default function NavBar() {
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="about"
                 // href="/about"
-                href="/take-notes"
+                href="/being-built"
               >
                 About{" "}
                 <i style={{ fontSize: "20px" }} className="fas fa-robot"></i>
@@ -64,7 +64,7 @@ export default function NavBar() {
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="team"
                 // href="/team"
-                href="/take-notes"
+                href="/being-built"
               >
                 Team{" "}
                 <i
@@ -79,7 +79,7 @@ export default function NavBar() {
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="contact"
                 // href="/contact"
-                href="/take-notes"
+                href="/being-built"
               >
                 Contact
                 <i

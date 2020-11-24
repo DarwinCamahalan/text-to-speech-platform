@@ -2,18 +2,16 @@ import React from "react";
 
 import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
-import TTS from "../components/TTS";
+import BeingBuilt from "../components/BeingBuilt";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
-import MusicPlayer from "../components/MusicPlayer";
 
-export default function TextToSpeech() {
+export default function FaceRecognitionPage() {
   return (
     <div>
       <NavigationBar />
       <Social />
-      <MusicPlayer />
-      <TTS />
+      <BeingBuilt />
       <Products />
       <Footer />
     </div>
