@@ -12,7 +12,6 @@ export default function Team() {
     {
       img: "/assets/team/team2-circle.png",
       name: "Darwin Camahalan",
-      to: "",
     },
     {
       img: "/assets/team/team3-circle.png",
