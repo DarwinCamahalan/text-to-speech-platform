@@ -70,8 +70,8 @@ nav p {
 .containertts .input-bg .card {
   padding: 20px 30px;
   border-radius: 40px !important;
-  -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 45, 0.4) !important;
+  box-shadow: 0px 0px 30px 0px rgba(0, 255, 45, 0.4) !important;
   opacity: 0.8 !important;
   background-image: url("./img/g4.gif");
   background-position: center;
@@ -133,6 +133,7 @@ nav p {
   background: none !important;
   border-radius: 20px !important;
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
   font-weight: bold;
   border: 0px !important;
   height: 30vh;
@@ -353,7 +354,7 @@ header .bg:hover {
     font-size: 12px !important;
   }
   p {
-    font-size: 11px !important;
+    font-size: 12px !important;
     font-weight: normal !important;
   }
   .probot {
@@ -876,6 +877,7 @@ body {
 }
 
 .social-container {
+  z-index: 99;
   position: relative;
 }
 
@@ -930,6 +932,51 @@ body {
 @media (max-width: 768px) {
   .social-container {
     display: none;
+  }
+}
+
+.team-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.team-image p {
+  font-family: "VT323";
+  color: white;
+  font-size: 25px;
+}
+
+.team-image a {
+  text-decoration: none !important;
+}
+
+.team-image img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.team hr {
+  border: #2193b0 1px solid;
+  margin: 5% 0;
+}
+
+@media (max-width: 768px) {
+  .team p {
+    font-family: "VT323";
+    color: white;
+    font-size: 30px !important;
+  }
+  .team a {
+    text-decoration: none !important;
+  }
+  .team h1 {
+    font-family: "VT323";
+    color: white;
+    font-size: 30px !important;
+    font-weight: normal !important;
   }
 }
 

@@ -43,6 +43,7 @@ export default function Products() {
                   style={{
                     fontFamily: "VT323",
                     color: "#00e804",
+                    fontSize: "25px",
                   }}
                 >
                   {products.title}

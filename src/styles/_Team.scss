@@ -1,0 +1,45 @@
+.team-image {
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  p {
+    font-family: "VT323";
+    color: white;
+    font-size: 25px;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  img:hover {
+    transform: rotate(360deg);
+
+    transition: all 1s ease;
+  }
+}
+.team {
+  hr {
+    border: #2193b0 1px solid;
+    margin: 5% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    p {
+      font-family: "VT323";
+      color: white;
+      font-size: 30px !important;
+    }
+    a {
+      text-decoration: none !important;
+    }
+    h1 {
+      font-family: "VT323";
+      color: white;
+      font-size: 30px !important;
+      font-weight: normal !important;
+    }
+  }
+}
