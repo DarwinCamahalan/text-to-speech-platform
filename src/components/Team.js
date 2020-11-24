@@ -113,16 +113,14 @@ export default function Team() {
           <Row>
             {team1.map((team1, index) => (
               <Col key={index} className="team-image">
-                <a href={team1.to}>
-                  <img
-                    onMouseEnter={start}
-                    onMouseLeave={stop}
-                    className=" mx-auto d-block"
-                    src={team1.img}
-                    alt={team1.img}
-                  />
-                  <p className="text-center">{team1.name}</p>
-                </a>
+                <img
+                  onMouseEnter={start}
+                  onMouseLeave={stop}
+                  className=" mx-auto d-block"
+                  src={team1.img}
+                  alt={team1.img}
+                />
+                <p className="text-center">{team1.name}</p>
               </Col>
             ))}
           </Row>
