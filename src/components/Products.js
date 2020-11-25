@@ -27,7 +27,7 @@ export default function Products() {
   return (
     <div className="pb-5 m-5 pt-3 prod">
       <Container className="mx-auto m-0 p-0 text-center">
-        <h1 style={{ fontFamily: "VT323", color: "#00e804" }}>
+        <h1 style={{ fontFamily: "VT323", color: "#6dd5ed" }}>
           More Products{" "}
           <i style={{ fontSize: "20px" }} className="mx-2 fas fa-robot"></i>
         </h1>
@@ -42,7 +42,7 @@ export default function Products() {
                   className="probot pt-3"
                   style={{
                     fontFamily: "VT323",
-                    color: "#00e804",
+                    color: "#6dd5ed",
                     fontSize: "25px",
                   }}
                 >

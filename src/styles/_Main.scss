@@ -141,12 +141,24 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .input-bg {
     padding-left: 10%;
     margin-right: 30%;
   }
   .containertts {
     padding: 0 8%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input-bg {
+    .card {
+      margin: 10% 5% 0 5%;
+
+      height: 70vh;
+      background-position: center;
+      background-size: contain;
+    }
   }
 }

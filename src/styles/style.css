@@ -206,13 +206,22 @@ nav p {
   border-radius: 10px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .input-bg {
     padding-left: 10%;
     margin-right: 30%;
   }
   .containertts {
     padding: 0 8%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input-bg .card {
+    margin: 10% 5% 0 5%;
+    height: 70vh;
+    background-position: center;
+    background-size: contain;
   }
 }
 
@@ -847,7 +856,7 @@ body {
   padding: 5%;
   text-align: center;
   color: black !important;
-  border-radius: 30px !important;
+  border-radius: 0 !important;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   background: #2193b0;
@@ -958,9 +967,23 @@ body {
   transition: all 1s ease;
 }
 
+.team {
+  background-image: url("./img/bg.gif");
+  background-size: 60px;
+  background-position: 50% 46%;
+  background-repeat: no-repeat;
+}
+
 .team hr {
   border: #2193b0 1px solid;
   margin: 5% 0;
+}
+
+.team-image:hover {
+  background-image: url("./img/clap.gif");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {

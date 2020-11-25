@@ -14,7 +14,6 @@
   }
   img:hover {
     transform: rotate(360deg);
-
     transition: all 1s ease;
   }
 }
@@ -23,8 +22,17 @@
     border: #2193b0 1px solid;
     margin: 5% 0;
   }
+  background-image: url("./img/bg.gif");
+  background-size: 60px;
+  background-position: 50% 46%;
+  background-repeat: no-repeat;
 }
-
+.team-image:hover {
+  background-image: url("./img/clap.gif");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 @media (max-width: 768px) {
   .team {
     p {

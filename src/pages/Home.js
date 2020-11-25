@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Helmet } from "react-helmet";
 import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
 import Header from "../components/Header";
@@ -11,6 +11,9 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <NavigationBar />
       <Social />
       <audio autoPlay loop>
