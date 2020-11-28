@@ -61,7 +61,7 @@ export default function FaceRecognition() {
       faceapi.draw.drawDetections(canvasRef.current, resizeDetections);
       faceapi.draw.drawFaceLandmarks(canvasRef.current, resizeDetections);
       faceapi.draw.drawFaceExpressions(canvasRef.current, resizeDetections);
-    }, 500);
+    }, 1000);
   };
   const videoHeight = 480;
   const videoWidth = 640;
@@ -79,7 +79,7 @@ export default function FaceRecognition() {
           <div>
             <h2
               className="text-center "
-              style={{ fontFamily: "VT323", color: "#00e804" }}
+              style={{ fontFamily: "VT323", color: "#6dd5ed" }}
             >
               {initializing
                 ? "Initializing Face Recognition 2077"

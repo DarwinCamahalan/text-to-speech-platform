@@ -82,7 +82,7 @@ export default function Team() {
   return (
     <div className="py-5 mb-5 team">
       <Helmet>
-        <title>Team Members</title>
+        <title>Team Members 🤣</title>
       </Helmet>
       <audio autoPlay loop>
         <source src="/assets/music/team-bg.mp3" />
@@ -96,14 +96,14 @@ export default function Team() {
           fontWeight: "bold",
         }}
       >
-        Team Behind <br />{" "}
-        <p className="mt-3" style={{ fontFamily: "Nosifer" }}>
-          Text to Speech 2077
+        <p className="mt-3" style={{ fontFamily: "Nosifer", color: "#6dd5ed" }}>
+          Text to Speech <br />
+          <span style={{ fontFamily: "Goldman", color: "red" }}>2077</span>
         </p>
       </h1>
       <h1
         className="text-center py-5"
-        style={{ fontFamily: "VT323", color: "#fff" }}
+        style={{ fontFamily: "VT323", color: "#6dd5ed" }}
       >
         Numericals Team
       </h1>
@@ -126,7 +126,7 @@ export default function Team() {
           <hr />
           <h1
             className="text-center pt-5"
-            style={{ fontFamily: "VT323", color: "#fff" }}
+            style={{ fontFamily: "VT323", color: "#6dd5ed" }}
           >
             Operating System Team
           </h1>

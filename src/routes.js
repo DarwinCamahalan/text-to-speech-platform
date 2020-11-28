@@ -6,6 +6,7 @@ import FaceRecognitionPage from "./pages/FaceRecognitionPage";
 import PageBuilt from "./pages/PageBuilt";
 import VoiceToText from "./pages/VoiceToText";
 import TeamPage from "./pages/TeamPage";
+import AboutPage from "./pages/AboutPage";
 
 export default function routes() {
   return (
@@ -38,6 +39,11 @@ export default function routes() {
       <Switch>
         <Route exact path="/team">
           <TeamPage />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route exact path="/about">
+          <AboutPage />
         </Route>
       </Switch>
     </Router>

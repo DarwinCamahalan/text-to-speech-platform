@@ -13,6 +13,9 @@
     text-decoration: none !important;
   }
   img:hover {
+    border: #6dd5ed solid 5px;
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     transform: rotate(360deg);
     transition: all 1s ease;
   }

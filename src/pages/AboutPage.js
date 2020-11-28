@@ -1,0 +1,19 @@
+import React from "react";
+
+import NavigationBar from "../components/NavBar";
+import Social from "../components/Social";
+import About from "../components/About";
+import Products from "../components/Products";
+import Footer from "../components/Footer";
+
+export default function AboutPage() {
+  return (
+    <div>
+      <NavigationBar />
+      <Social />
+      <About />
+      <Products />
+      <Footer />
+    </div>
+  );
+}

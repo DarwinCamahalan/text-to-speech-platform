@@ -44,7 +44,7 @@ export default function NavBar() {
         </NavbarBrand>
         <NavbarToggler
           onClick={toggle}
-          style={{ background: "#2193b0", color: "#000" }}
+          style={{ background: "#6dd5ed", color: "#000" }}
         />
         <Collapse className="text-center py-1" isOpen={isOpen} navbar>
           <Nav className="navtxt ml-auto" navbar>
@@ -52,8 +52,7 @@ export default function NavBar() {
               <NavLink
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="about"
-                // href="/about"
-                href="/being-built"
+                href="/about"
               >
                 About{" "}
                 <i style={{ fontSize: "20px" }} className="fas fa-robot"></i>
