@@ -77,7 +77,7 @@ export default function NavBar() {
                 className={classnames(scroll ? "text-white" : "text-white")}
                 data-page="contact"
                 // href="/contact"
-                href="/being-built"
+                href="/chat"
               >
                 Contact
                 <i
