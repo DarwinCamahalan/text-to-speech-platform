@@ -36,7 +36,7 @@ export default function Header4() {
               </i>
               <div className="text-left pb-3 pl-5">
                 {" "}
-                <Button className="btn rounded-pill" href="/face-detection">
+                <Button className="btn rounded-pill" href="/face-recognition">
                   <strong>Start Now</strong>
                 </Button>
               </div>

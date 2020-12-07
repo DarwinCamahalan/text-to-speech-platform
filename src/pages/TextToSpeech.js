@@ -5,6 +5,7 @@ import Social from "../components/Social";
 import TTS from "../components/TTS";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
+import LongFooter from "../components/LongFooter";
 import MusicPlayer from "../components/MusicPlayer";
 
 export default function TextToSpeech() {
@@ -15,6 +16,7 @@ export default function TextToSpeech() {
       <MusicPlayer />
       <TTS />
       <Products />
+      <LongFooter />
       <Footer />
     </div>
   );

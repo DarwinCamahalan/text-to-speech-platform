@@ -5,6 +5,7 @@ import Social from "../components/Social";
 import FaceRecognition from "../components/FaceRecognition";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
+import LongFooter from "../components/LongFooter";
 
 export default function FaceRecognitionPage() {
   return (
@@ -13,6 +14,7 @@ export default function FaceRecognitionPage() {
       <Social />
       <FaceRecognition />
       <Products />
+      <LongFooter />
       <Footer />
     </div>
   );

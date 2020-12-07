@@ -21,7 +21,7 @@ export default function Products() {
     {
       title: "Face Recognition 2077",
       img: "/assets/image/robot3.png",
-      to: "/face-detection",
+      to: "/face-recognition",
     },
   ];
   return (

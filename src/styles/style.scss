@@ -13,11 +13,60 @@
 @import "./About";
 @import "./Chat";
 @import "./MainHeaderStyle";
+@import "./Footer";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+    background: none;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(43, 43, 43, 1);
+    // border: 1px solid #6dd5ed;
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(
+      to right,
+      #6dd5ed,
+      #2193b0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #6dd5ed,
+      #2193b0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    border-radius: 50px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  }
 }
 
 h1 {

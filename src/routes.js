@@ -28,7 +28,7 @@ export default function routes() {
         </Route>
       </Switch>
       <Switch>
-        <Route exact path="/face-detection">
+        <Route exact path="/face-recognition">
           <FaceRecognitionPage />
         </Route>
       </Switch>

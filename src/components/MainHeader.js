@@ -4,11 +4,11 @@ import { UncontrolledCarousel } from "reactstrap";
 function MainHeader() {
   const items = [
     {
-      src: "/assets/image/r5.png",
+      src: "/assets/image/r1.png",
       key: "1",
     },
     {
-      src: "/assets/image/r1.png",
+      src: "/assets/image/r4.png",
       key: "2",
     },
     {
@@ -20,7 +20,7 @@ function MainHeader() {
       key: "4",
     },
     {
-      src: "/assets/image/r4.png",
+      src: "/assets/image/r5.png",
       key: "5",
     },
     {

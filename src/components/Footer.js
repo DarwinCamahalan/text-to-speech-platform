@@ -5,7 +5,7 @@ import { Col, Container, Row } from "reactstrap";
 
 export default function Footer() {
   return (
-    <footer className="border-top">
+    <footer>
       <Container className="py-3">
         <Row>
           <Col

@@ -4,6 +4,7 @@ import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
 import BeingBuilt from "../components/BeingBuilt";
 import Products from "../components/Products";
+import LongFooter from "../components/LongFooter";
 import Footer from "../components/Footer";
 
 export default function PageBuilt() {
@@ -13,6 +14,7 @@ export default function PageBuilt() {
       <Social />
       <BeingBuilt />
       <Products />
+      <LongFooter />
       <Footer />
     </div>
   );

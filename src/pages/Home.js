@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Header2 from "../components/Header2";
 import Header3 from "../components/Header3";
 import Header4 from "../components/Header4";
+import LongFooter from "../components/LongFooter";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       <Header2 />
       <Header3 />
       <Header4 />
+      <LongFooter />
       <Footer />
     </div>
   );

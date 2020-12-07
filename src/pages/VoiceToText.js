@@ -5,6 +5,7 @@ import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
 import VTT from "../components/VTT";
 import Products from "../components/Products";
+import LongFooter from "../components/LongFooter";
 import Footer from "../components/Footer";
 
 export default function VoiceToText() {
@@ -15,6 +16,7 @@ export default function VoiceToText() {
       <MusicPlayer />
       <VTT />
       <Products />
+      <LongFooter />
       <Footer />
     </div>
   );
