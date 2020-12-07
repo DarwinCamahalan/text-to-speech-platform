@@ -63,8 +63,8 @@ export default function FaceRecognition() {
       faceapi.draw.drawFaceExpressions(canvasRef.current, resizeDetections);
     }, 1000);
   };
-  const videoHeight = 780;
-  const videoWidth = 720;
+  const videoHeight = 480;
+  const videoWidth = 640;
 
   const [isLoopable] = useState(true);
 
