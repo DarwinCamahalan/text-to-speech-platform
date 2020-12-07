@@ -39,7 +39,7 @@ export default function LongFooter() {
               <span>Email: </span> camahalandarwin@gmail.com
             </NavLink>
             <NavLink to="#">
-              <span>Address: </span> Cagayan de Oro City Phiplippines
+              <span>Address: </span> Cagayan de Oro City Philippines
             </NavLink>
             <NavLink to="#">
               <span>Phone Number: </span> +63754270609

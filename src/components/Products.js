@@ -4,22 +4,26 @@ import { Container, Col, Row, CardImg, NavLink } from "reactstrap";
 export default function Products() {
   const products = [
     {
-      title: "Text to Speech 2077",
+      title: "Text to Speech",
+      num: "2077",
       img: "/assets/image/robot2.png",
       to: "/text-to-speech",
     },
     {
-      title: "Voice to Text 2077",
+      title: "Voice to Text",
+      num: "2077",
       img: "/assets/image/robot5.png",
       to: "/being-built",
     },
     {
-      title: "Voice Recognition 2077",
+      title: "Voice Recognition",
+      num: "2077",
       img: "/assets/image/robot7.png",
       to: "/being-built",
     },
     {
-      title: "Face Recognition 2077",
+      title: "Face Recognition",
+      num: "2077",
       img: "/assets/image/robot3.png",
       to: "/face-recognition",
     },
@@ -28,7 +32,7 @@ export default function Products() {
     <div className="pb-5 m-5 pt-3 prod">
       <Container className="mx-auto m-0 p-0 text-center">
         <h1 style={{ fontFamily: "VT323", color: "#6dd5ed" }}>
-          More Products{" "}
+          More <span>Products</span>
           <i style={{ fontSize: "20px" }} className="mx-2 fas fa-robot"></i>
         </h1>
         <Row className="m-0 p-0">
@@ -46,7 +50,7 @@ export default function Products() {
                     fontSize: "25px",
                   }}
                 >
-                  {products.title}
+                  {products.title} <span>{products.num}</span>
                 </p>
               </NavLink>
             </Col>

@@ -105,7 +105,7 @@ export default function Team() {
         className="text-center py-5"
         style={{ fontFamily: "VT323", color: "#6dd5ed" }}
       >
-        Numericals Team
+        Numericals <span>Team</span>
       </h1>
       <Container>
         <Col>
@@ -128,7 +128,7 @@ export default function Team() {
             className="text-center pt-5"
             style={{ fontFamily: "VT323", color: "#6dd5ed" }}
           >
-            Operating System Team
+            Operating System <span>Team</span>
           </h1>
           <Row className="py-5 mt-5">
             {team2.map((team2, index) => (

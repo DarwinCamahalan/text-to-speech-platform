@@ -34,7 +34,7 @@ function MainHeader() {
         <UncontrolledCarousel
           className="hide "
           items={items}
-          style={{ width: "20%" }}
+          style={{ width: "20%", borderRadius: "50%" }}
         />
       </div>
       <hr />
