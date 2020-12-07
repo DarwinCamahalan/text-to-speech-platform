@@ -82,7 +82,7 @@ export default function Team() {
   return (
     <div className="py-5 mb-5 team">
       <Helmet>
-        <title>Team Members 🤣</title>
+        <title>Team Members</title>
       </Helmet>
       <audio autoPlay loop>
         <source src="/assets/music/team-bg.mp3" />

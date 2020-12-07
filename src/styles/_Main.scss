@@ -11,15 +11,13 @@
       border-radius: 40px !important;
       -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 45, 0.4) !important;
       box-shadow: 0px 0px 30px 0px rgba(0, 255, 45, 0.4) !important;
-      opacity: 0.8 !important;
       background-image: url("./img/g4.gif");
       background-position: center;
       background-size: cover;
       opacity: 0.9 !important;
     }
     .card:hover {
-      transform: scale(1.01);
-      transition: all 10s ease;
+      transition: all 10000ms ease;
       filter: hue-rotate(360deg);
     }
   }
@@ -45,7 +43,7 @@
     }
     img:hover {
       filter: hue-rotate(360deg);
-      transition: all 2s ease;
+      transition: all 1000ms ease;
       transform: scale(1.25);
       background-image: url("./img/g7.gif");
       background-repeat: no-repeat;
@@ -55,7 +53,7 @@
   }
   .robot:hover {
     filter: hue-rotate(360deg);
-    transition: all 5s ease;
+    transition: all 5000ms ease;
   }
 
   #textInput {
@@ -87,7 +85,7 @@
   }
   .play:hover {
     transform: scale(1.1);
-    transition: all 0.3s ease;
+    transition: all 300ms ease;
     color: rgb(0, 0, 0) !important;
     background: #2193b0; /* fallback for old browsers */
     background: -webkit-linear-gradient(

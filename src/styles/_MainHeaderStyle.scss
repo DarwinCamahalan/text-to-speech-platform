@@ -1,0 +1,15 @@
+.head {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  hr {
+    margin-top: 10%;
+    border: 1px solid #6dd5ed;
+  }
+}
+
+@media (min-width: 768px) {
+  .head {
+    padding: 0 10%;
+  }
+}

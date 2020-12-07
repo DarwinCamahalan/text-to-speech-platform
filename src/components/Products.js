@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/style.css";
-import { Container, Col, Row, CardImg, Card, NavLink } from "reactstrap";
+import { Container, Col, Row, CardImg, NavLink } from "reactstrap";
 export default function Products() {
   const products = [
     {
@@ -35,9 +35,9 @@ export default function Products() {
           {products.map((products, index) => (
             <Col key={index} xl="3">
               <NavLink href={products.to}>
-                <Card className="card2">
+                <div className="card2">
                   <CardImg src={products.img} className="robots" />
-                </Card>
+                </div>
                 <p
                   className="probot pt-3"
                   style={{

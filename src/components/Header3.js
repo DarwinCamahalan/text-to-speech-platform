@@ -15,7 +15,9 @@ export default function Header3() {
         <div className="container">
           <div className="text">
             <div className="bg">
-              <h1>Voice Assistant 2077</h1>
+              <h1>
+                Voice Assistant <span>2077</span>
+              </h1>
               <h5>
                 The Smartest Voice Assistant in the whole Universe! It can
                 predict what your saying before you even talk to it. The Apex

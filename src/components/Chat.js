@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import "../styles/style.css";
+import { Helmet } from "react-helmet";
 
 let socket;
 const CONNECTION_PORT = "localhost:3002/";
@@ -45,6 +46,9 @@ function Chat() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Chat App</title>
+      </Helmet>
       {!loggedIn ? (
         <div className="logIn">
           <div className="inputs">
@@ -90,7 +94,12 @@ function Chat() {
                 setMessage(e.target.value);
               }}
             />
-            <button onClick={sendMessage}>Send</button>
+            <button
+              onClick={sendMessage}
+              style={{ color: "#000", fontWeight: "bolder" }}
+            >
+              Send
+            </button>
           </div>
         </div>
       )}

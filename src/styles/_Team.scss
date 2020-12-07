@@ -17,7 +17,7 @@
     -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     transform: rotate(360deg);
-    transition: all 1s ease;
+    transition: all 1000ms ease;
   }
 }
 .team {
@@ -35,6 +35,9 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  p {
+    color: red;
+  }
 }
 @media (max-width: 768px) {
   .team {

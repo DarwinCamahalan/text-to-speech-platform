@@ -7,10 +7,10 @@ export default function BeingBuilt() {
     <>
       <div>
         <Helmet>
-          <title>Page Being Built 🥺</title>
+          <title>Page Being Built</title>
         </Helmet>
         <Container className="py-5 mt-5 text-center text-white vtt">
-          <h1>Our Product are currently being Built.</h1>
+          <h2>Our Product are currently being Built.</h2>
           <h3>We're Excited to show it though.</h3>
           <i className="fas fa-tools pt-5" style={{ fontSize: "1000%" }}></i>
         </Container>

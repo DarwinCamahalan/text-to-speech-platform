@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title>About 📖</title>
+        <title>About</title>
       </Helmet>
       <Container className="py-5 my-3">
         <Row xl="12">

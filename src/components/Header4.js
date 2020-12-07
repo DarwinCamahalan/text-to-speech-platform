@@ -15,7 +15,9 @@ export default function Header4() {
         <div className="container">
           <div className="text">
             <div className="bg">
-              <h1>Face Recognition 2077</h1>
+              <h1>
+                Face Recognition <span>2077</span>
+              </h1>
               <h5>
                 The Worlds Best of the Best Face Recognition Algorithm Ever
                 Made.

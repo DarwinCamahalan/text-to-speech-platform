@@ -16,7 +16,9 @@ export default function Header() {
         <div className="container">
           <div className="text">
             <div className="bg">
-              <h1>Text to Speech 2077</h1>
+              <h1>
+                Text to Speech <span>2077</span>{" "}
+              </h1>
               <h5>
                 The Most Powerful Text to Speech Software ever made. the most
                 accurate, versatile and dynamic Text to Speech Software in the
@@ -34,7 +36,7 @@ export default function Header() {
                   <br /> <br /> - Google
                 </p>
               </i>
-              <div className="text-left pb-3 pl-5">
+              <div className="text-left  pl-5">
                 {" "}
                 <Button className="btn rounded-pill" href="/text-to-speech">
                   <strong>Start Now</strong>

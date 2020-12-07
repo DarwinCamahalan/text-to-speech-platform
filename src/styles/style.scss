@@ -12,6 +12,7 @@
 @import "./Team";
 @import "./About";
 @import "./Chat";
+@import "./MainHeaderStyle";
 
 * {
   margin: 0;
@@ -19,6 +20,22 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Nosifer", cursive;
+  text-shadow: 0px 0px 12px #000000;
+}
+p {
+  text-shadow: 0px 0px 12px #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+h5 {
+  text-shadow: 0px 0px 12px #000000;
+  font-family: "Poppins", sans-serif;
+}
+span {
+  color: red;
+}
 a:hover {
   transform: scale(1.05);
   transition: all 0.2s ease;
@@ -51,4 +68,12 @@ footer {
 footer:hover {
   filter: hue-rotate(360deg);
   transition: all 5s ease;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 15px !important;
+    font-weight: bolder !important;
+    text-shadow: none;
+  }
 }

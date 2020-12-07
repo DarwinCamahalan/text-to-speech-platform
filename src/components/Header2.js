@@ -15,7 +15,9 @@ export default function Header2() {
         <div className="container">
           <div className="text">
             <div className="bg">
-              <h1>Voice to Text 2077</h1>
+              <h1>
+                Voice to Text <span>2077</span>
+              </h1>
               <h5>
                 The Best to the best Voice to Text Software, It has an accuracy
                 level of over 9000! It can hear you from 700 miles away. and
