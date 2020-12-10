@@ -5,30 +5,34 @@ import { Col, Container, Row } from "reactstrap";
 
 export default function LongFooter() {
   return (
-    <div className="main-footer">
-      <Container className="py-5">
-        <Row>
-          <Col className="col text-center">
+    <div className="main-footer text-center">
+      <Container className="py-5 mx-auto">
+        <Row className="mx-auto">
+          <Col className="c1" xl="4">
             <h1
               className="py-3"
               style={{ fontSize: "25px", color: " #6dd5ed" }}
             >
               All <span>Links</span>
             </h1>
-            <NavLink className="d-block d-lg-inline" to="/text-to-speech">
+
+            <NavLink to="/text-to-speech">
               Text to Speech <span>2077</span>
             </NavLink>
-            <NavLink className="d-block d-lg-inline" to="/being-built">
+            <br />
+            <NavLink to="/being-built">
               Voice to Text <span>2077</span>
             </NavLink>
-            <NavLink className="d-block d-lg-inline" to="/being-built">
+            <br />
+            <NavLink to="/being-built">
               Voice Recognition <span>2077</span>
             </NavLink>
-            <NavLink className="d-block d-lg-inline" to="/face-recognition">
+            <br />
+            <NavLink to="/face-recognition">
               Face Recognition <span>2077</span>
             </NavLink>
           </Col>
-          <Col className="col text-center">
+          <Col className="c1" xl="4">
             <h1
               className="py-3"
               style={{ fontSize: "25px", color: " #6dd5ed" }}
@@ -38,34 +42,40 @@ export default function LongFooter() {
             <NavLink to="#">
               <span>Email: </span> camahalandarwin@gmail.com
             </NavLink>
+            <br />
             <NavLink to="#">
               <span>Address: </span> Cagayan de Oro City Philippines
             </NavLink>
+            <br />
             <NavLink to="#">
               <span>Phone Number: </span> +63754270609
             </NavLink>
+            <br />
             <NavLink to="https://www.linkedin.com/in/DarwinCamahalan/">
               <span>LinkedIn: </span> Darwin Camahalan
             </NavLink>
           </Col>
-          <Col className="col text-center">
+          <Col className="c1" xl="4">
             <h1
               className="py-3"
               style={{ fontSize: "25px", color: " #6dd5ed" }}
             >
               Our <span>Sponsor</span>
             </h1>
-            <NavLink className="d-block d-lg-inline" to="#">
+            <NavLink to="#">
               Mik-Mik <span>Powder</span>
             </NavLink>
-            <NavLink className="d-block d-lg-inline" to="#">
-              Ice <span>Water</span>
+            <br />
+            <NavLink to="#">
+              Proben ni <span>Bobords</span>
             </NavLink>
-            <NavLink className="d-block d-lg-inline" to="#">
-              Ice <span>Pop</span>
+            <br />
+            <NavLink to="#">
+              Ice <span>Drop</span>
             </NavLink>
-            <NavLink className="d-block d-lg-inline" to="#">
-              Bobot <span>Hard Candy</span>
+            <br />
+            <NavLink to="#">
+              Siomai sa <span>USTP</span>
             </NavLink>
           </Col>
         </Row>

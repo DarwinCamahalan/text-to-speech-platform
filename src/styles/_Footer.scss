@@ -8,14 +8,8 @@
   }
 }
 
-@media (min-width: 1000px) {
-  .col {
-    display: grid;
-    grid-column: auto;
-  }
-}
 @media (max-width: 1000px) {
-  .col {
-    padding: 10% 0;
+  .c1 {
+    margin: 5% 0;
   }
 }

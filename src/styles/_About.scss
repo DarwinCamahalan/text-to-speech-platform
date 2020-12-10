@@ -21,3 +21,11 @@
     transition: all 500ms ease;
   }
 }
+
+video:focus {
+  outline: none;
+}
+
+.bgvideo:focus {
+  outline: none;
+}
