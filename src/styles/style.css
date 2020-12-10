@@ -228,7 +228,7 @@ header {
 
 header .container {
   padding: 2%;
-  border-radius: 50px;
+  border-radius: 50px 0px 50px 0px;
   border: 3px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -330,10 +330,10 @@ header .header-robot:hover {
 }
 
 header .bg:hover {
-  -webkit-filter: hue-rotate(180deg);
-          filter: hue-rotate(180deg);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(360deg);
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 
 @media (max-width: 1000px) {
@@ -363,9 +363,6 @@ header .bg:hover {
   .robot {
     display: none;
   }
-  header {
-    padding: 0 5%;
-  }
 }
 
 .header2 {
@@ -377,7 +374,7 @@ header .bg:hover {
 
 .header2 .container {
   padding: 2%;
-  border-radius: 50px;
+  border-radius: 0px 50px 0px 50px;
   border: 3px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -483,10 +480,10 @@ header .bg:hover {
 }
 
 .header2 .bg:hover {
-  -webkit-filter: hue-rotate(280deg);
-          filter: hue-rotate(280deg);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(360deg);
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 
 @media (max-width: 1000px) {
@@ -530,7 +527,7 @@ header .bg:hover {
 
 .header3 .container {
   padding: 2%;
-  border-radius: 50px;
+  border-radius: 50px 0px 50px 0px;
   border: 3px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -636,10 +633,10 @@ header .bg:hover {
 }
 
 .header3 .bg:hover {
-  -webkit-filter: hue-rotate(200deg);
-          filter: hue-rotate(200deg);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(360deg);
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 
 @media (max-width: 1000px) {
@@ -683,8 +680,8 @@ header .bg:hover {
 }
 
 .header4 .container {
-  padding: 2%;
-  border-radius: 50px;
+  padding: 1.5%;
+  border-radius: 0px 50px 0px 50px;
   border: 3px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -790,10 +787,10 @@ header .bg:hover {
 }
 
 .header4 .bg:hover {
-  -webkit-filter: hue-rotate(150deg);
-          filter: hue-rotate(150deg);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(360deg);
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
 }
 
 @media (max-width: 1000px) {
@@ -883,6 +880,7 @@ body {
 }
 
 .video {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,15 +892,31 @@ body {
 
 .video video {
   border: #6dd5ed solid 3px;
-  border-radius: 20px;
+  border-radius: 50px 0px 50px 0px;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+}
+
+.loading {
+  width: 100%;
+  height: 24vh;
+  background-image: url("./img/load.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 7%;
+  z-index: -9999;
+  position: absolute;
+  -webkit-filter: hue-rotate(-20deg);
+          filter: hue-rotate(-20deg);
 }
 
 @media (max-width: 768px) {
   .video {
     width: 100% !important;
     height: auto !important;
+  }
+  .loading {
+    background-size: 20%;
   }
 }
 
@@ -925,7 +939,7 @@ body {
 .card2 {
   padding: 5%;
   text-align: center;
-  border-radius: 20px !important;
+  border-radius: 0px 30px 0px 30px !important;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   border: 1px solid #6dd5ed !important;
@@ -1069,7 +1083,7 @@ body {
 
 .bgvideo video {
   border: #6dd5ed solid 3px;
-  border-radius: 20px;
+  border-radius: 50px 0px 50px 0px;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
 }
@@ -1103,7 +1117,7 @@ body {
   width: 600px;
   height: 350px;
   border: 5px solid #6dd5ed;
-  border-radius: 20px;
+  border-radius: 50px 0px 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1169,7 +1183,7 @@ body {
   border: 5px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  border-radius: 10px;
+  border-radius: 0px 50px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1333,10 +1347,6 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
 
 * ::-webkit-scrollbar {
@@ -1351,22 +1361,17 @@ body {
 }
 
 * ::-webkit-scrollbar-thumb {
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
   background: linear-gradient(to right, #6dd5ed, #2193b0);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   border-radius: 50px;
 }
 
 * ::-webkit-scrollbar-thumb:hover {
-  background: #ed213a;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#93291e), to(#ed213a));
-  background: linear-gradient(to right, #93291e, #ed213a);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff0000;
+  background: -webkit-gradient(linear, left top, right top, from(#f66f60), to(#ff0000));
+  background: linear-gradient(to right, #f66f60, #ff0000);
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
 }
@@ -1387,7 +1392,7 @@ h5 {
 }
 
 span {
-  color: red;
+  color: #ff0000;
 }
 
 a:hover {
@@ -1398,12 +1403,8 @@ a:hover {
 }
 
 footer {
-  background: #2193b0;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
   background: linear-gradient(to right, #6dd5ed, #2193b0);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   color: white !important;
@@ -1422,9 +1423,24 @@ footer:hover {
 
 @media (max-width: 1000px) {
   h1 {
-    font-size: 15px !important;
+    font-size: 18px !important;
     font-weight: bolder !important;
     text-shadow: none;
+  }
+  .container {
+    padding: 1rem 0 !important;
+  }
+  header {
+    padding: 1% !important;
+  }
+  .header2 {
+    padding: 1% !important;
+  }
+  .header3 {
+    padding: 1% !important;
+  }
+  .header4 {
+    padding: 1% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

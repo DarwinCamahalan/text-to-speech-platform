@@ -88,7 +88,7 @@ export default function FaceRecognition() {
             </h2>
 
             <div className="video flex">
-              {" "}
+              <div className="loading"></div>{" "}
               <video ref={videoRef} autoPlay muted onPlay={handleVideoOnPlay} />
               <canvas ref={canvasRef} className="canvas" />
             </div>

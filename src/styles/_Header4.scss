@@ -6,8 +6,8 @@
   margin-bottom: 10%;
 
   .container {
-    padding: 2%;
-    border-radius: 50px;
+    padding: 1.5%;
+    border-radius: 0px 50px 0px 50px;
     border: 3px solid #6dd5ed;
     -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -84,8 +84,8 @@
     z-index: 1;
   }
   .bg:hover {
-    filter: hue-rotate(150deg);
-    transition: all 3s ease;
+    filter: hue-rotate(360deg);
+    transition: all 5s ease;
   }
 }
 
