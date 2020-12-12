@@ -2,9 +2,12 @@
   font-family: "Press Start 2P", cursive;
   color: red !important;
   a:hover {
+    transition: all ease 200ms;
     background: none;
-    border-bottom: 3px solid #6dd5ed;
-
+    border: 2px solid #6dd5ed;
+    border-radius: 15px 0px 15px 0px;
+    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     color: red !important;
   }
   a {

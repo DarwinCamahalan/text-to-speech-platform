@@ -24,71 +24,75 @@ export default function NavBar() {
   };
 
   return (
-    <Navbar
-      className={classnames(
-        "m-0 p-0 nav ",
-        scroll ? "bg-transparent" : "bg-transparent"
-      )}
-      style={!scroll ? { opacity: 0.95 } : null}
-      dark={scroll}
-      light={!scroll}
-      expand="md"
-    >
-      <Container fluid className="nav mx-3">
-        <NavbarBrand className="brand pt-4 text-white" href="/">
-          <h2>
-            {" "}
-            <strong>Text to Speech</strong>
-          </h2>
-          <p>2077</p>
-        </NavbarBrand>
-        <NavbarToggler
-          onClick={toggle}
-          style={{ background: "#6dd5ed", color: "#000" }}
-        />
-        <Collapse className="text-center py-1" isOpen={isOpen} navbar>
-          <Nav className="navtxt ml-auto" navbar>
-            <NavItem>
-              <NavLink
-                className={classnames(scroll ? "text-white" : "text-white")}
-                data-page="about"
-                href="/about"
-              >
-                About{" "}
-                <i style={{ fontSize: "20px" }} className="fas fa-robot"></i>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                className={classnames(scroll ? "text-white" : "text-white")}
-                data-page="team"
-                href="/team"
-              >
-                Team{" "}
-                <i
-                  style={{ fontSize: "20px" }}
-                  className="fas fa-user-friends"
-                ></i>
-              </NavLink>
-            </NavItem>
+    <>
+      <Navbar
+        className={classnames(
+          "m-0 p-0 nav",
+          scroll ? "bg-transparent" : "bg-transparent"
+        )}
+        style={!scroll ? { opacity: 0.95 } : null}
+        dark={scroll}
+        light={!scroll}
+        expand="md"
+        id="navbar"
+      >
+        <Container fluid className="nav mx-3">
+          <NavbarBrand className="brand pt-4 text-white" href="/">
+            <h2>
+              {" "}
+              <strong>Text to Speech</strong>
+            </h2>
+            <p>2077</p>
+          </NavbarBrand>
+          <NavbarToggler
+            onClick={toggle}
+            style={{ background: "#6dd5ed", color: "#000" }}
+          />
+          <Collapse className="text-center py-1" isOpen={isOpen} navbar>
+            <Nav className="navtxt ml-auto" navbar>
+              <NavItem>
+                <NavLink
+                  className={classnames(scroll ? "text-white" : "text-white")}
+                  data-page="about"
+                  href="/about"
+                >
+                  About{" "}
+                  <i style={{ fontSize: "20px" }} className="fas fa-robot"></i>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  className={classnames(scroll ? "text-white" : "text-white")}
+                  data-page="team"
+                  href="/team"
+                >
+                  Team{" "}
+                  <i
+                    style={{ fontSize: "20px" }}
+                    className="fas fa-user-friends"
+                  ></i>
+                </NavLink>
+              </NavItem>
 
-            <NavItem>
-              <NavLink
-                className={classnames(scroll ? "text-white" : "text-white")}
-                data-page="contact"
-                // href="/contact"
-                href="/chat"
-              >
-                Contact
-                <i
-                  style={{ fontSize: "20px" }}
-                  className="fas fa-phone ml-2"
-                ></i>
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Container>
-    </Navbar>
+              <NavItem>
+                <NavLink
+                  className={classnames(scroll ? "text-white" : "text-white")}
+                  data-page="contact"
+                  // href="/contact"
+                  href="/chat"
+                >
+                  Contact
+                  <i
+                    style={{ fontSize: "20px" }}
+                    className="fas fa-phone ml-2"
+                  ></i>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>
+      <hr />
+    </>
   );
 }

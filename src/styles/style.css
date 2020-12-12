@@ -4,8 +4,13 @@
 }
 
 .navtxt a:hover {
+  -webkit-transition: all ease 200ms;
+  transition: all ease 200ms;
   background: none;
-  border-bottom: 3px solid #6dd5ed;
+  border: 2px solid #6dd5ed;
+  border-radius: 15px 0px 15px 0px;
+  -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   color: red !important;
 }
 
@@ -968,6 +973,11 @@ body {
   position: relative;
 }
 
+.social-container hr {
+  margin: 10px 0 !important;
+  border: 1px !important;
+}
+
 .social-container .social-col {
   padding: 8px;
   border-radius: 0px 20px 20px 0px;
@@ -1322,12 +1332,12 @@ video:focus {
 
 .head {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-bottom: 10%;
 }
 
 .head hr {
-  margin-top: 10%;
+  margin-top: 7% !important;
   border: 1px solid #6dd5ed;
 }
 
@@ -1377,7 +1387,7 @@ video:focus {
   background: linear-gradient(to right, #6dd5ed, #2193b0);
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  border-radius: 50px;
+  border-radius: 0px 15px 0px 15px;
 }
 
 * ::-webkit-scrollbar-thumb:hover {
@@ -1420,6 +1430,7 @@ footer {
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   color: white !important;
+  overflow-x: hidden !important;
 }
 
 footer a {
@@ -1431,6 +1442,13 @@ footer:hover {
           filter: hue-rotate(360deg);
   -webkit-transition: all 5s ease;
   transition: all 5s ease;
+}
+
+hr {
+  margin: 1.5% 4% !important;
+  border: #2193b0 1px solid !important;
+  -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
 }
 
 @media (max-width: 1000px) {

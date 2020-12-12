@@ -37,7 +37,7 @@
     background: linear-gradient(to right, $color, #2193b0);
     -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-    border-radius: 50px;
+    border-radius: 0px 15px 0px 15px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -82,7 +82,7 @@ footer {
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   color: white !important;
-
+  overflow-x: hidden !important;
   a {
     color: black !important;
   }
@@ -92,6 +92,12 @@ footer:hover {
   transition: all 5s ease;
 }
 
+hr {
+  margin: 1.5% 4% !important;
+  border: #2193b0 1px solid !important;
+  -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+}
 @media (max-width: 1000px) {
   h1 {
     font-size: 18px !important;

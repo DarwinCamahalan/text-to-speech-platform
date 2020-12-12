@@ -63,7 +63,7 @@ export default function LongFooter() {
               Our <span>Sponsor</span>
             </h1>
             <NavLink to="#">
-              Mik-Mik <span>Powder</span>
+              Koi Koi ni <span>Ante</span>
             </NavLink>
             <br />
             <NavLink to="#">
@@ -71,11 +71,11 @@ export default function LongFooter() {
             </NavLink>
             <br />
             <NavLink to="#">
-              Ice <span>Drop</span>
+              Mik-Mik <span>Powder</span>
             </NavLink>
             <br />
             <NavLink to="#">
-              Siomai sa <span>USTP</span>
+              Siomai ni <span>Papart</span>
             </NavLink>
           </Col>
         </Row>
