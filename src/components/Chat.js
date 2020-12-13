@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
+import Tilt from "react-vanilla-tilt";
 import "../styles/style.css";
 import { Helmet } from "react-helmet";
 
@@ -74,14 +75,16 @@ function Chat() {
           <div className="messages">
             {messageList.map((val, key) => {
               return (
-                <div
-                  className="messageContainer"
-                  id={val.author === userName ? "You" : "Other"}
-                >
-                  <div className="messageIndividual">
-                    {val.author}: {val.message}
+                <Tilt className="tilt">
+                  <div
+                    className="messageContainer"
+                    id={val.author === userName ? "You" : "Other"}
+                  >
+                    <div className="messageIndividual">
+                      {val.author}: {val.message}
+                    </div>
                   </div>
-                </div>
+                </Tilt>
               );
             })}
           </div>

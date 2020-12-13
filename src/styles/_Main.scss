@@ -1,14 +1,15 @@
 .containertts {
   display: flex;
-  margin-top: 6%;
+  margin-top: 5%;
   height: 75vh;
 
   .input-bg {
     flex: 2;
     z-index: 3;
+
     .card {
       padding: 20px 30px;
-      border-radius: 40px !important;
+      border-radius: 50px 0px 50px 0px !important;
       -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 45, 0.4) !important;
       box-shadow: 0px 0px 30px 0px rgba(0, 255, 45, 0.4) !important;
       background-image: url("./img/g4.gif");
@@ -71,14 +72,14 @@
     color: rgb(255, 255, 255);
   }
   .play {
-    border-radius: 50px !important;
+    border-radius: 25px 0px 25px 0px !important;
     color: rgb(255, 255, 255) !important;
     font-size: 35px;
     padding: 5px 20px !important;
     margin: 5px 50px !important;
   }
   .mic {
-    border-radius: 50px !important;
+    border-radius: 0px 25px 0px 25px !important;
     color: rgb(37, 37, 37) !important;
     font-size: 35px;
     padding: 5px 30px !important;
@@ -118,25 +119,6 @@
     -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   }
-  .micicon:hover {
-    transform: scale(1.2);
-    color: rgb(0, 0, 0) !important;
-    background: #2193b0; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #6dd5ed,
-      #2193b0
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #6dd5ed,
-      #2193b0
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-    box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-    padding: 5px !important;
-    border-radius: 10px;
-  }
 }
 
 @media (min-width: 1025px) {
@@ -150,11 +132,16 @@
 }
 
 @media (max-width: 700px) {
+  .containertts {
+    margin-top: 10%;
+    padding: 0 2%;
+  }
   .input-bg {
+    padding-left: 0 !important;
+    margin-right: 0 !important;
     .card {
-      margin: 10% 5% 0 5%;
+      padding: 3% !important;
 
-      height: 70vh;
       background-position: center;
       background-size: contain;
     }

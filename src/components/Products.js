@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/style.css";
+import Tilt from "react-vanilla-tilt";
 import { Container, Col, Row, CardImg, NavLink } from "reactstrap";
 export default function Products() {
   const products = [
@@ -38,21 +39,23 @@ export default function Products() {
         <Row className="m-0 p-0">
           {products.map((products, index) => (
             <Col key={index} xl="3">
-              <NavLink href={products.to}>
-                <div className="card2">
-                  <CardImg src={products.img} className="robots" />
-                </div>
-                <p
-                  className="probot pt-3"
-                  style={{
-                    fontFamily: "VT323",
-                    color: "#6dd5ed",
-                    fontSize: "25px",
-                  }}
-                >
-                  {products.title} <span>{products.num}</span>
-                </p>
-              </NavLink>
+              <Tilt className="tilt p-0 m-0">
+                <NavLink href={products.to}>
+                  <div className="card2">
+                    <CardImg src={products.img} className="robots" />
+                  </div>
+                  <p
+                    className="probot pt-3"
+                    style={{
+                      fontFamily: "VT323",
+                      color: "#6dd5ed",
+                      fontSize: "25px",
+                    }}
+                  >
+                    {products.title} <span>{products.num}</span>
+                  </p>
+                </NavLink>
+              </Tilt>
             </Col>
           ))}
         </Row>

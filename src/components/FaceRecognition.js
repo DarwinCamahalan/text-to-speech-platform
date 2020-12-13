@@ -61,7 +61,7 @@ export default function FaceRecognition() {
       faceapi.draw.drawDetections(canvasRef.current, resizeDetections);
       faceapi.draw.drawFaceLandmarks(canvasRef.current, resizeDetections);
       faceapi.draw.drawFaceExpressions(canvasRef.current, resizeDetections);
-    }, 1000);
+    }, 700);
   };
   const videoHeight = 480;
   const videoWidth = 640;
@@ -76,7 +76,7 @@ export default function FaceRecognition() {
         </Helmet>
 
         <Draggable>
-          <div>
+          <div className="w-100">
             <h2
               className="text-center "
               style={{ fontFamily: "VT323", color: "#6dd5ed" }}

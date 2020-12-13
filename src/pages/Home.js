@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/style.css";
 import { Helmet } from "react-helmet";
 import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
@@ -25,10 +26,14 @@ export default function Home() {
       <h1 className="text-center" style={{ color: "#6dd5ed" }}>
         All Products <span>2077</span>{" "}
       </h1>
-      <Header />
-      <Header2 />
-      <Header3 />
-      <Header4 />
+      <div className="home">
+        {" "}
+        <Header />
+        <Header2 />
+        <Header3 />
+        <Header4 />
+      </div>
+
       <LongFooter />
       <Footer />
     </div>

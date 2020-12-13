@@ -1,21 +1,24 @@
 import React from "react";
 import "../styles/style.css";
+import Tilt from "react-vanilla-tilt";
 import { Helmet } from "react-helmet";
 import { Row, Col, Container } from "reactstrap";
 function About() {
   return (
-    <div>
+    <div className="px-3">
       <Helmet>
         <title>About</title>
       </Helmet>
       <Container className="py-5 my-3">
         <Row xl="12">
           <Col xl="10" className=" mx-auto">
-            <div className="bgvideo">
-              <video controls autoPlay loop width="100%">
-                <source src="/assets/video/about.mp4" />
-              </video>
-            </div>
+            <Tilt className="tilt">
+              <div className="bgvideo">
+                <video controls autoPlay loop width="100%">
+                  <source src="/assets/video/about.mp4" />
+                </video>
+              </div>
+            </Tilt>
             <h2
               className="py-5 text-center"
               style={{ fontFamily: "Nosifer", color: "#6dd5ed" }}

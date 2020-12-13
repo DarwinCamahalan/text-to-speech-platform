@@ -1,7 +1,7 @@
 header {
   background-image: url("./img/g6.gif");
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 
   .container {
@@ -12,7 +12,7 @@ header {
     box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     margin-top: 5%;
     display: flex;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(100px);
     .text {
       flex: 2;
       color: #6dd5ed;
