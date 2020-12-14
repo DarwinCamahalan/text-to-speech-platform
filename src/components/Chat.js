@@ -5,7 +5,7 @@ import "../styles/style.css";
 import ScrollableFeed from "react-scrollable-feed";
 
 let socket;
-const CONNECTION_PORT = "localhost:69/";
+const CONNECTION_PORT = process.env.PORT || "localhost:69/";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     socket = io(CONNECTION_PORT);
-  });
+  }, [CONNECTION_PORT]);
 
   useEffect(() => {
     socket.on("receive_message", (data) => {
@@ -94,13 +94,26 @@ function App() {
               {messageList.map((val, key) => {
                 return (
                   <Tilt className="tilt ">
+                    <div className="my-2 mr-3">
+                      {" "}
+                      <p
+                        style={{ color: "#fff", marginRight: "10" }}
+                        className={
+                          val.author === userName ? "person" : "person2"
+                        }
+                      >
+                        <i
+                          style={{ fontSize: "20px" }}
+                          className="px-2 fas fa-user-circle"
+                        ></i>
+                        {val.author}
+                      </p>
+                    </div>
                     <divs
                       className="messageContainer"
                       id={val.author === userName ? "You" : "Other"}
                     >
-                      <div className="messageIndividual">
-                        {val.author}: {val.message}
-                      </div>
+                      <div className="messageIndividual">{val.message}</div>
                     </divs>
                   </Tilt>
                 );

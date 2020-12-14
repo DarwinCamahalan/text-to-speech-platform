@@ -1195,6 +1195,10 @@ video:focus {
 }
 
 .logIn {
+  background-image: url("./img/g1.gif");
+  background-size: 30%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
   width: 50%;
   height: 100%;
   border: 5px solid #6dd5ed;
@@ -1325,8 +1329,17 @@ video:focus {
   .chatContainer {
     width: 100%;
   }
+  .chatContainer h1 {
+    font-size: 20px !important;
+  }
+  .chatContainer h5 {
+    font-size: 20px !important;
+  }
+  .chatContainer button {
+    margin-right: 0 !important;
+  }
   .logIn {
-    width: 100%;
+    width: 50%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1472,7 +1485,7 @@ video:focus {
 
 .messageContainer h1 {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 17px;
 }
@@ -1481,6 +1494,7 @@ video:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  text-align: right !important;
 }
 
 #You .messageIndividual {
@@ -1488,9 +1502,28 @@ video:focus {
 }
 
 #Other {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+.person {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  text-align: right !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.person2 {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  text-align: left !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 #Other .messageIndividual {
@@ -1508,15 +1541,10 @@ video:focus {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: none;
   border: 1px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  opacity: 0.9;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 10px;
-  margin-top: 20px;
 }
 
 .scrollable {

@@ -6,8 +6,8 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-const server = app.listen("69", () => {
-  console.log("Server Running on Port 69 :)");
+const server = app.listen(process.env.PORT || "69", () => {
+  console.log(server);
 });
 
 io = socket(server);

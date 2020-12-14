@@ -11,6 +11,10 @@
 }
 
 .logIn {
+  background-image: url("./img/g1.gif");
+  background-size: 30%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
   width: 50%;
   height: 100%;
   border: 5px solid #6dd5ed;
@@ -125,9 +129,18 @@
 
   .chatContainer {
     width: 100%;
+    h1 {
+      font-size: 20px !important;
+    }
+    h5 {
+      font-size: 20px !important;
+    }
+    button {
+      margin-right: 0 !important;
+    }
   }
   .logIn {
-    width: 100%;
+    width: 50%;
     justify-content: center;
     align-items: center;
   }
@@ -211,20 +224,34 @@
 
 .messageContainer h1 {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 17px;
 }
 
 #You {
   justify-content: flex-end;
+  text-align: right !important;
   .messageIndividual {
     border-radius: 20px 20px 0 20px;
   }
 }
 
 #Other {
-  justify-content: flex-start;
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+.person {
+  justify-content: flex-start !important;
+  text-align: right !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.person2 {
+  justify-content: flex-end !important;
+  text-align: left !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 #Other .messageIndividual {
@@ -238,18 +265,12 @@
 .messageIndividual {
   width: 200px;
   height: 60px;
-
   display: grid;
   place-items: center;
-  background: none;
   border: 1px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  opacity: 0.9;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 10px;
-  margin-top: 20px;
 }
 
 .scrollable {
