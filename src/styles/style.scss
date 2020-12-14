@@ -105,11 +105,20 @@ hr {
   z-index: 99999 !important;
   margin: 0 !important;
   padding: 0 !important;
+  -webkit-box-shadow: 0 !important;
+  box-shadow: 0 !important;
+  border: 0 !important;
 }
 
 .home {
   padding: 0 7%;
 }
+
+::placeholder {
+  color: $color;
+  opacity: 1;
+}
+
 @media (max-width: 1000px) {
   .home {
     padding: 0 !important;

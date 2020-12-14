@@ -1,27 +1,48 @@
 .App {
   display: grid;
   place-items: center;
-  height: 80vh;
+  height: 70vh;
+  margin-top: 5%;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
 }
 
 .logIn {
-  width: 600px;
-  height: 350px;
+  width: 50%;
+  height: 100%;
   border: 5px solid #6dd5ed;
   border-radius: 50px 0px 50px 0px;
   display: flex;
-  justify-content: center;
+
   align-items: center;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  backdrop-filter: blur(5px);
+
+  h6 {
+    font-size: 35px;
+    color: white;
+  }
+  span {
+    background-color: #ff8c00;
+    color: #000;
+    border-radius: 5px;
+    padding: 2px 5px;
+  }
+  strong {
+    font-size: 35px !important;
+  }
 }
 
 .logIn input {
   margin: 10px;
   width: 200px;
-  height: 40px;
-  border-radius: 10px;
+  height: 50px;
+  border-radius: 20px 0px 20px 0px;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   border: 2px solid #6dd5ed;
@@ -39,7 +60,7 @@
   width: 200px;
   height: 50px;
   border: none;
-  border-radius: 10px;
+  border-radius: 0px 20px 0px 20px;
   border: 1px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -60,27 +81,76 @@
 }
 
 .chatContainer {
+  backdrop-filter: blur(5px);
   width: 50%;
-  height: 350px;
-  border: 5px solid #6dd5ed;
+  height: 100%;
+  border: 3px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 50px 0px 50px 0px;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  .inputs {
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: $color solid 1px;
+  }
 }
+@media (max-width: 600px) {
+  .logIn {
+    width: 100%;
+    padding: 0 50%;
+    .mytitle {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 1000px) {
+  .logIn {
+    h6 {
+      font-size: 50px !important;
+      color: white;
+    }
+    strong {
+      background-color: #ff8c00;
+      color: #000;
+      border-radius: 5px;
+      font-size: 50px !important;
+      padding: 2px 5px;
+    }
+  }
+
   .chatContainer {
     width: 100%;
   }
   .logIn {
     width: 100%;
-    padding: 0 50%;
+    justify-content: center;
+    align-items: center;
   }
   .App {
+    margin-top: 10%;
     padding: 0 1%;
   }
+
+  .chatContainer .messageInputs {
+    flex: 20%;
+    padding: 1% 5%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    ::placeholder {
+      color: $color;
+      opacity: 1;
+      font-size: 15px;
+    }
+  }
 }
+
 .chatContainer .messages {
   flex: 80%;
   width: 100%;
@@ -89,36 +159,49 @@
 
 .chatContainer .messageInputs {
   flex: 20%;
-  width: 100%;
+  padding: 1% 5%;
   display: flex;
   flex-direction: row;
-  margin-top: 10%;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+  ::placeholder {
+    color: $color;
+    opacity: 1;
+  }
 }
 .chatContainer .messageInputs input:focus {
   outline: none !important;
 }
+.chatContainer .messageInputs button:focus {
+  outline: none !important;
+}
 .chatContainer .messageInputs input {
   flex: 80%;
-
-  height: calc(100% -5px);
-  border: none;
-  border-top: 5px solid #6dd5ed;
-  -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   padding-left: 20px;
   font-size: 20px;
+  color: white;
+  margin-right: 3%;
 }
 
 .chatContainer .messageInputs button {
   flex: 20%;
   height: 100%;
 
-  background-color: #6dd5ed;
-  -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
-  border: none;
-  color: white;
-  font-size: 18px;
+  backdrop-filter: blur(10px);
+  background: none;
+  border: 1px solid $color;
+  border-radius: 50px;
+  color: $color;
+  font-size: 200%;
+  margin-right: 5%;
+}
+.chatContainer .messageInputs button:hover {
+  transform: scale(1.05);
+  transition: all ease 300ms;
+  color: red;
+  border: 1px solid red;
+  -webkit-box-shadow: 0px 0px 25px -5px rgba(255, 0, 0, 0.6) !important;
+  box-shadow: 0px 0px 25px -5px rgba(255, 0, 0, 0.6) !important;
 }
 
 .messageContainer {
@@ -145,8 +228,11 @@
 }
 
 #Other .messageIndividual {
-  background-color: #5ff064;
-  color: black;
+  background: none;
+  border: 1px solid #ff0000;
+  -webkit-box-shadow: 0px 0px 25px -5px rgba(255, 0, 0, 0.6) !important;
+  box-shadow: 0px 0px 25px -5px rgba(255, 0, 0, 0.6) !important;
+  color: rgb(255, 255, 255);
   border-radius: 20px 20px 20px 0px;
 }
 .messageIndividual {
@@ -164,4 +250,8 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-right: 10px;
   margin-top: 20px;
+}
+
+.scrollable {
+  overflow-x: hidden !important;
 }

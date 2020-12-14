@@ -3,6 +3,7 @@ import React from "react";
 import MusicPlayer from "../components/MusicPlayer";
 import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
+import ChatButton from "../components/ChatButton";
 import VTT from "../components/VTT";
 import Products from "../components/Products";
 import LongFooter from "../components/LongFooter";
@@ -13,6 +14,7 @@ export default function VoiceToText() {
     <div>
       <NavigationBar />
       <Social />
+      <ChatButton />
       <MusicPlayer />
       <VTT />
       <Products />

@@ -2,25 +2,23 @@ import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import Tilt from "react-vanilla-tilt";
 import "../styles/style.css";
-import { Helmet } from "react-helmet";
+import ScrollableFeed from "react-scrollable-feed";
 
 let socket;
-const CONNECTION_PORT = "localhost:3002/";
+const CONNECTION_PORT = "localhost:69/";
 
-function Chat() {
-  // Before Login
+function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [room, setRoom] = useState("");
   const [userName, setUserName] = useState("");
 
-  // After Login
   const [message, setMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
 
   useEffect(() => {
     socket = io(CONNECTION_PORT);
-  });
-  // , [CONNECTION_PORT]
+  }, [CONNECTION_PORT]);
+
   useEffect(() => {
     socket.on("receive_message", (data) => {
       setMessageList([...messageList, data]);
@@ -42,27 +40,29 @@ function Chat() {
 
     await socket.emit("send_message", messageContent);
     setMessageList([...messageList, messageContent.content]);
-    setMessage("");
   };
 
   return (
-    <div className="App">
-      <Helmet>
-        <title>Chat App</title>
-      </Helmet>
+    <header className="App">
       {!loggedIn ? (
         <div className="logIn">
+          <h6 className="mytitle m-0 py-5 my-3">
+            Chat{" "}
+            <span>
+              <strong>hub</strong>
+            </span>
+          </h6>
           <div className="inputs">
             <input
               type="text"
-              placeholder="Name..."
+              placeholder="Name"
               onChange={(e) => {
                 setUserName(e.target.value);
               }}
             />
             <input
               type="text"
-              placeholder="Room..."
+              placeholder="Group Chat Name"
               onChange={(e) => {
                 setRoom(e.target.value);
               }}
@@ -72,42 +72,59 @@ function Chat() {
         </div>
       ) : (
         <div className="chatContainer">
-          <div className="messages">
-            {messageList.map((val, key) => {
-              return (
-                <Tilt className="tilt">
-                  <div
-                    className="messageContainer"
-                    id={val.author === userName ? "You" : "Other"}
-                  >
-                    <div className="messageIndividual">
-                      {val.author}: {val.message}
-                    </div>
-                  </div>
-                </Tilt>
-              );
-            })}
+          <div className="text-center py-3">
+            {" "}
+            <h1
+              className="m-0 p-0 "
+              style={{ fontSize: "25px", color: "#6dd5ed" }}
+            >
+              Group <span>Chat</span> Name
+            </h1>
+            <h5
+              className="m-0 p-0 text-white pt-2"
+              style={{ fontFamily: "Poppins" }}
+            >
+              {" "}
+              {room}
+            </h5>
           </div>
-
+          <hr />
+          <ScrollableFeed className="scrollable">
+            <div className="messages py-3">
+              {messageList.map((val, key) => {
+                return (
+                  <Tilt className="tilt ">
+                    <divs
+                      className="messageContainer"
+                      id={val.author === userName ? "You" : "Other"}
+                    >
+                      <div className="messageIndividual">
+                        {val.author}: {val.message}
+                      </div>
+                    </divs>
+                  </Tilt>
+                );
+              })}
+            </div>
+          </ScrollableFeed>
           <div className="messageInputs">
             <input
+              className="inputs bg-transparent"
               type="text"
-              placeholder="Message..."
+              placeholder="Input Your Message Here..."
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
             />
-            <button
-              onClick={sendMessage}
-              style={{ color: "#000", fontWeight: "bolder" }}
-            >
-              Send
+
+            <button className="mybtn text-center" onClick={sendMessage}>
+              <i class="fas fa-paper-plane"></i>
             </button>
           </div>
         </div>
       )}
-    </div>
+    </header>
   );
 }
 
-export default Chat;
+export default App;

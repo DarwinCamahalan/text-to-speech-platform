@@ -3,6 +3,7 @@ import "../styles/style.css";
 import { Helmet } from "react-helmet";
 import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
+import ChatButton from "../components/ChatButton";
 import MainHeader from "../components/MainHeader";
 import Header from "../components/Header";
 import Header2 from "../components/Header2";
@@ -19,6 +20,7 @@ export default function Home() {
       </Helmet>
       <NavigationBar />
       <Social />
+      <ChatButton />
       <audio autoPlay loop>
         <source src="/assets/music/electric.mp3" />
       </audio>

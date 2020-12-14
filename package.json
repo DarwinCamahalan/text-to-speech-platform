@@ -15,6 +15,7 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-scrollable-feed": "^1.2.0",
     "react-speech-kit": "^3.0.1",
     "react-vanilla-tilt": "^1.0.0",
     "reactstrap": "^8.7.1",

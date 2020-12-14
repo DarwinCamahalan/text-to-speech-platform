@@ -2,6 +2,7 @@ import React from "react";
 
 import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
+import ChatButton from "../components/ChatButton";
 import TTS from "../components/TTS";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
@@ -13,6 +14,7 @@ export default function TextToSpeech() {
     <div>
       <NavigationBar />
       <Social />
+      <ChatButton />
       <MusicPlayer />
       <TTS />
       <Products />
