@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     socket = io(CONNECTION_PORT);
-  });
+  }, []);
 
   useEffect(() => {
     socket.on("receive_message", (data) => {
