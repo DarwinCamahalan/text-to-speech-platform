@@ -1,3 +1,5 @@
+const PORT = process.env.PORT || 69;
+
 const express = require("express");
 const socket = require("socket.io");
 const app = express();
@@ -6,7 +8,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-const server = app.listen(process.env.PORT || "69", () => {
+const server = app.listen(PORT, () => {
   console.log("Server Running on Port 69 :)");
 });
 

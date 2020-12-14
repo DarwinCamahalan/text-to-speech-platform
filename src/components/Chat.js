@@ -5,7 +5,7 @@ import "../styles/style.css";
 import ScrollableFeed from "react-scrollable-feed";
 
 let socket;
-const CONNECTION_PORT = process.env.PORT || "localhost:69/";
+const CONNECTION_PORT = process.env.PORT || "localhost:69";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
