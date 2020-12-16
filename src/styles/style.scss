@@ -125,8 +125,37 @@ hr {
   background-repeat: no-repeat;
   filter: hue-rotate(150deg);
 }
+.cons {
+  background-image: url("./img/bg2.gif");
+  background-position: top;
+  background-size: 60%;
+  background-repeat: no-repeat;
+
+  .img1 {
+    position: absolute;
+    top: 18%;
+    left: 55%;
+    bottom: 0;
+    width: 8%;
+    z-index: 99;
+  }
+}
 
 @media (max-width: 1000px) {
+  .cons {
+    background-image: url("./img/bg2.gif");
+    background-position: top;
+    background-size: 120%;
+    background-repeat: no-repeat;
+
+    .img1 {
+      position: absolute;
+      top: 9%;
+      left: 63%;
+      bottom: 0;
+      width: 30%;
+    }
+  }
   .home {
     padding: 0 !important;
   }

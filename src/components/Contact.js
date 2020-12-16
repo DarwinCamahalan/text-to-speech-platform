@@ -11,7 +11,7 @@ export default function Contact() {
         </Helmet>
 
         <Container
-          className="py-5 mt-5 text-center text-white "
+          className="py-5 mt-5 text-center text-white cons "
           style={{ fontFamily: "Poppins" }}
         >
           <img
@@ -21,6 +21,10 @@ export default function Contact() {
             width="250px"
           />
           <h2>Contact Our Fullstack Developer.</h2>
+          <p>
+            I like to Code 💻, Play 5+ Kinds of Instruments 🎸, Exercise 🏃‍♂️ and
+            More!
+          </p>
           <h6 className="py-3">
             {" "}
             <span>Name: </span> Darwin L. Camahalan
@@ -37,6 +41,7 @@ export default function Contact() {
             {" "}
             <span>LinkedIn: </span>{" "}
             <a
+              style={{ color: "#6dd5ed" }}
               href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHsZbq48Zt-IQAAAXZqT7u4026bmjEh8la9I3FkMNd-aYwQw-AvzQAlOl1fkWhgVQ6IS7CtdC-Zv5Se8RaGAZ3G26b5Se9i6yWoIMa_hTCtDdI-b0EkjVNwDge-UfMrtju08w8=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2FDarwinCamahalan"
               target="_blank"
               rel="noreferrer"
@@ -49,14 +54,16 @@ export default function Contact() {
             {" "}
             <span>Facebook: </span>{" "}
             <a
+              style={{ color: "#6dd5ed" }}
               href="https://www.facebook.com/darpax101/"
               target="_blank"
               rel="noreferrer"
             >
               {" "}
-              Darwin
+              Darwïn
             </a>{" "}
           </h6>
+          <img className="img1" src="/assets/image/b1.gif" alt="developer" />
         </Container>
       </div>
     </>
