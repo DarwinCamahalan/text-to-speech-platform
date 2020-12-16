@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
+import { Helmet } from "react-helmet";
 import Tilt from "react-vanilla-tilt";
 import "../styles/style.css";
 import ScrollableFeed from "react-scrollable-feed";
@@ -44,6 +45,9 @@ function App() {
 
   return (
     <header className="App">
+      <Helmet>
+        <title>Chat Hub</title>
+      </Helmet>
       {!loggedIn ? (
         <div className="logIn">
           <h6 className="mytitle m-0 py-5 my-3">
