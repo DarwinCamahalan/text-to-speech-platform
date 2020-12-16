@@ -3,10 +3,10 @@
   place-items: center;
   height: 70vh;
   margin-top: 5%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   ::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
+    width: 0px !important; /* Remove scrollbar space */
+    background: none !important; /* Optional: just make scrollbar invisible */
   }
 }
 
@@ -102,10 +102,14 @@
     border: $color solid 1px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .logIn {
     width: 100%;
     padding: 0 50%;
+    input {
+      margin-left: 0 !important;
+      width: 200px !important;
+    }
     .mytitle {
       display: none;
     }
@@ -114,6 +118,8 @@
 
 @media (max-width: 1000px) {
   .logIn {
+    width: 100% !important;
+
     h6 {
       font-size: 50px !important;
       color: white;

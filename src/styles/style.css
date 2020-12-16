@@ -1184,13 +1184,13 @@ video:focus {
   place-items: center;
   height: 70vh;
   margin-top: 5%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .App ::-webkit-scrollbar {
-  width: 0px;
+  width: 0px !important;
   /* Remove scrollbar space */
-  background: transparent;
+  background: none !important;
   /* Optional: just make scrollbar invisible */
 }
 
@@ -1304,10 +1304,14 @@ video:focus {
   border: #6dd5ed solid 1px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .logIn {
     width: 100%;
     padding: 0 50%;
+  }
+  .logIn input {
+    margin-left: 0 !important;
+    width: 200px !important;
   }
   .logIn .mytitle {
     display: none;
@@ -1315,6 +1319,9 @@ video:focus {
 }
 
 @media (max-width: 1000px) {
+  .logIn {
+    width: 100% !important;
+  }
   .logIn h6 {
     font-size: 50px !important;
     color: white;
@@ -1707,6 +1714,15 @@ hr {
   opacity: 1;
 }
 
+.built {
+  background-image: url("./img/g10.gif");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-filter: hue-rotate(150deg);
+          filter: hue-rotate(150deg);
+}
+
 @media (max-width: 1000px) {
   .home {
     padding: 0 !important;
@@ -1737,6 +1753,9 @@ hr {
   }
   body {
     overflow-x: hidden !important;
+  }
+  .vtt i {
+    font-size: 70px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

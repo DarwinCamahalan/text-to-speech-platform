@@ -78,7 +78,7 @@ export default function NavBar() {
                 <NavLink
                   className={classnames(scroll ? "text-white" : "text-white")}
                   data-page="contact"
-                  href="/being-built"
+                  href="/contact"
                 >
                   Contact
                   <i

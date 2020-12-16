@@ -8,6 +8,7 @@ import VoiceToText from "./pages/VoiceToText";
 import TeamPage from "./pages/TeamPage";
 import AboutPage from "./pages/AboutPage";
 import ChatPage from "./pages/ChatPage";
+import ContactPage from "./pages/ContactPage";
 
 export default function routes() {
   return (
@@ -50,6 +51,11 @@ export default function routes() {
       <Switch>
         <Route exact path="/chat">
           <ChatPage />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route exact path="/contact">
+          <ContactPage />
         </Route>
       </Switch>
     </Router>

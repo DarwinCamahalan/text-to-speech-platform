@@ -48,6 +48,9 @@ function App() {
       <Helmet>
         <title>Chat Hub</title>
       </Helmet>
+      <audio autoPlay loop>
+        <source src="/assets/music/chat-bg.mp3" />
+      </audio>
       {!loggedIn ? (
         <div className="logIn">
           <h6 className="mytitle m-0 py-5 my-3">

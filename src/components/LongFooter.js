@@ -48,7 +48,7 @@ export default function LongFooter() {
             </NavLink>
             <br />
             <NavLink to="#">
-              <span>Phone Number: </span> +63754270609
+              <span>Phone Number: </span> +639754270609
             </NavLink>
             <br />
             <NavLink to="https://www.linkedin.com/in/DarwinCamahalan/">

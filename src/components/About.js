@@ -28,28 +28,24 @@ function About() {
             </h2>
             <div className="par text-justify">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                minus nemo ullam similique nobis iusto quos unde cum vero
-                tempore, quo quam saepe molestiae architecto a enim aut
-                consectetur? Enim dignissimos quaerat, quis omnis, sint
-                repellendus, ex voluptatum quidem earum adipisci necessitatibus
-                doloribus? Optio fuga debitis possimus, quas corrupti dolore.
+                Text to Speech 2077 is a Futuristic Website with lots of
+                features not just a Text to Speech Software it has a lot more to
+                offer. This is the most creative website you can ever imagine.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                minus nemo ullam similique nobis iusto quos unde cum vero
-                tempore, quo quam saepe molestiae architecto a enim aut
-                consectetur? Enim dignissimos quaerat, quis omnis, sint
-                repellendus, ex voluptatum quidem earum adipisci necessitatibus
-                doloribus? Optio fuga debitis possimus, quas corrupti dolore.
+                We have the most advance technology ever made and most reliable
+                software in the entire universe. Most future Proof Website and
+                aesthetically pleasing in the eyes.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                minus nemo ullam similique nobis iusto quos unde cum vero
-                tempore, quo quam saepe molestiae architecto a enim aut
-                consectetur? Enim dignissimos quaerat, quis omnis, sint
-                repellendus, ex voluptatum quidem earum adipisci necessitatibus
-                doloribus? Optio fuga debitis possimus, quas corrupti dolore.
+                We have 4 products for now but we will be expanding our software
+                in the future to ride the never ending advancement of
+                technologies ever imagine.
+              </p>
+              <p>
+                This website is built by a young and ambitious Developer from
+                the race of warriors, this is the most ambitous futuristic and
+                most advance website you'll ever see.
               </p>
             </div>
           </Col>

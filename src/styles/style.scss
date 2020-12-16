@@ -118,6 +118,13 @@ hr {
   color: $color;
   opacity: 1;
 }
+.built {
+  background-image: url("./img/g10.gif");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: hue-rotate(150deg);
+}
 
 @media (max-width: 1000px) {
   .home {
@@ -149,5 +156,10 @@ hr {
   }
   body {
     overflow-x: hidden !important;
+  }
+  .vtt {
+    i {
+      font-size: 70px !important;
+    }
   }
 }
