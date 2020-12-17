@@ -1237,7 +1237,7 @@ video:focus {
 
 .logIn input {
   margin: 10px;
-  width: 200px;
+  width: auto;
   height: 50px;
   border-radius: 20px 0px 20px 0px;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -1298,10 +1298,26 @@ video:focus {
 }
 
 .chatContainer .inputs {
+  width: 100% !important;
+  height: 100% !important;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 50px;
   border: #6dd5ed solid 1px;
+}
+
+.chatContainer input {
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: #6dd5ed solid 1px;
+}
+
+.chatContainer .messageInputs {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 @media (max-width: 700px) {
@@ -1370,8 +1386,6 @@ video:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
   }
   .chatContainer .messageInputs ::-webkit-input-placeholder {
     color: #6dd5ed;
@@ -1455,6 +1469,8 @@ video:focus {
   font-size: 20px;
   color: white;
   margin-right: 3%;
+  width: auto !important;
+  height: auto !important;
 }
 
 .chatContainer .messageInputs button {
@@ -1543,8 +1559,9 @@ video:focus {
 }
 
 .messageIndividual {
-  width: 200px;
-  height: 60px;
+  width: auto !important;
+  height: 60px !important;
+  padding: 0 4% !important;
   display: -ms-grid;
   display: grid;
   place-items: center;

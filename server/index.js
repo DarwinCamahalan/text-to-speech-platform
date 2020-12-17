@@ -9,25 +9,33 @@ app.use(cors());
 app.use(express.json());
 
 const server = app.listen(PORT, () => {
-  console.log("Server Running on Port 69 :)");
+  console.log("\nServer Running on Port 69 😋💦");
 });
 
 io = socket(server);
 
 io.on("connection", (socket) => {
-  console.log(socket.id);
-
   socket.on("join_room", (data) => {
     socket.join(data);
-    console.log("User Joined Room: " + data);
+
+    console.log(
+      "________________________________\n\nUser Joined Room: " + data + " 👋"
+    );
+    console.log(
+      "\nChat Room " +
+        data +
+        " ID: " +
+        socket.id +
+        " 🎉\n________________________________\n"
+    );
+    socket.on("disconnect", () => {
+      console.log("\n❌  A User Left the Chat Room  ❌");
+    });
   });
 
   socket.on("send_message", (data) => {
+    console.log("💌  Data Received from a User:\n");
     console.log(data);
     socket.to(data.room).emit("receive_message", data.content);
-  });
-
-  socket.on("disconnect", () => {
-    console.log("USER DISCONNECTED");
   });
 });

@@ -44,7 +44,7 @@
 
 .logIn input {
   margin: 10px;
-  width: 200px;
+  width: auto;
   height: 50px;
   border-radius: 20px 0px 20px 0px;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
@@ -96,10 +96,24 @@
   flex-direction: column;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
+
   .inputs {
+    width: 100% !important;
+    height: 100% !important;
     backdrop-filter: blur(10px);
     border-radius: 50px;
     border: $color solid 1px;
+  }
+  input {
+    width: 100% !important;
+    height: 100% !important;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: $color solid 1px;
+  }
+  .messageInputs {
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 @media (max-width: 700px) {
@@ -160,8 +174,6 @@
     padding: 1% 5%;
     display: flex;
     flex-direction: row;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
     ::placeholder {
       color: $color;
       opacity: 1;
@@ -200,6 +212,8 @@
   font-size: 20px;
   color: white;
   margin-right: 3%;
+  width: auto !important;
+  height: auto !important;
 }
 
 .chatContainer .messageInputs button {
@@ -269,8 +283,9 @@
   border-radius: 20px 20px 20px 0px;
 }
 .messageIndividual {
-  width: 200px;
-  height: 60px;
+  width: auto !important;
+  height: 60px !important;
+  padding: 0 4% !important;
   display: grid;
   place-items: center;
   border: 1px solid #6dd5ed;
