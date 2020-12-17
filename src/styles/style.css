@@ -1278,6 +1278,7 @@ video:focus {
 }
 
 .chatContainer {
+  overflow-x: hidden !important;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   width: 50%;
@@ -1295,6 +1296,13 @@ video:focus {
           flex-direction: column;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
+}
+
+.chatContainer ::-webkit-scrollbar {
+  width: 0px !important;
+  /* Remove scrollbar space */
+  background: none !important;
+  /* Optional: just make scrollbar invisible */
 }
 
 .chatContainer .inputs {
@@ -1350,7 +1358,14 @@ video:focus {
     padding: 2px 5px;
   }
   .chatContainer {
+    overflow-x: hidden !important;
     width: 100%;
+  }
+  .chatContainer ::-webkit-scrollbar {
+    width: 0px !important;
+    /* Remove scrollbar space */
+    background: none !important;
+    /* Optional: just make scrollbar invisible */
   }
   .chatContainer h1 {
     font-size: 20px !important;

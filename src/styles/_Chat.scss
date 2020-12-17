@@ -85,6 +85,11 @@
 }
 
 .chatContainer {
+  overflow-x: hidden !important;
+  ::-webkit-scrollbar {
+    width: 0px !important; /* Remove scrollbar space */
+    background: none !important; /* Optional: just make scrollbar invisible */
+  }
   backdrop-filter: blur(5px);
   width: 50%;
   height: 100%;
@@ -148,6 +153,11 @@
   }
 
   .chatContainer {
+    overflow-x: hidden !important;
+    ::-webkit-scrollbar {
+      width: 0px !important; /* Remove scrollbar space */
+      background: none !important; /* Optional: just make scrollbar invisible */
+    }
     width: 100%;
     h1 {
       font-size: 20px !important;
