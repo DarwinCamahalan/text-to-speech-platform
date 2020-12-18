@@ -888,6 +888,8 @@ body {
 }
 
 .video video {
+  -webkit-filter: brightness(130%) !important;
+          filter: brightness(130%) !important;
   border: #6dd5ed solid 3px;
   border-radius: 50px 0px 50px 0px;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;

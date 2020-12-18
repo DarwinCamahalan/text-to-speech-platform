@@ -61,7 +61,7 @@ export default function FaceRecognition() {
       faceapi.draw.drawDetections(canvasRef.current, resizeDetections);
       faceapi.draw.drawFaceLandmarks(canvasRef.current, resizeDetections);
       faceapi.draw.drawFaceExpressions(canvasRef.current, resizeDetections);
-    }, 700);
+    }, 500);
   };
   const videoHeight = 480;
   const videoWidth = 640;
@@ -104,6 +104,7 @@ export default function FaceRecognition() {
           <AudioPlayer
             className="music"
             autoPlay
+            volume="0.3"
             loop={isLoopable}
             src={initializing ? "" : "/assets/music/face-bg.mp3"}
             onPlay={(e) => console.log("onPlay")}
