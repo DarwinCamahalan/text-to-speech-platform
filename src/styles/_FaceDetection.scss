@@ -16,10 +16,7 @@
   margin: 20px 0;
   cursor: grab;
   video {
-    filter: blur(0.9px);
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg); /* Safari and Chrome */
-    -moz-transform: rotateY(180deg); /* Firefox */
+    // filter: blur(0.9px);
     border: #6dd5ed solid 3px;
     border-radius: 50px 0px 50px 0px;
     -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
