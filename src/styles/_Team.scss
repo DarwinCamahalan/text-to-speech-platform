@@ -13,7 +13,7 @@
     text-decoration: none !important;
   }
   img:hover {
-    border: #6dd5ed solid 5px;
+    border: #6dd5ed solid 3px;
     -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
     transform: rotate(360deg);
@@ -22,7 +22,7 @@
 }
 .team {
   hr {
-    border: #2193b0 1px solid;
+    border: #6dd5ed 1px solid;
     margin: 5% 0;
   }
   background-image: url("./img/bg.gif");
@@ -36,7 +36,7 @@
   background-position: top;
   background-repeat: no-repeat;
   p {
-    color: red;
+    color: #6dd5ed;
   }
 }
 @media (max-width: 768px) {

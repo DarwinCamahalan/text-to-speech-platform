@@ -1096,7 +1096,7 @@ body {
 }
 
 .team-image img:hover {
-  border: #6dd5ed solid 5px;
+  border: #6dd5ed solid 3px;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   -webkit-transform: rotate(360deg);
@@ -1113,7 +1113,7 @@ body {
 }
 
 .team hr {
-  border: #2193b0 1px solid;
+  border: #6dd5ed 1px solid;
   margin: 5% 0;
 }
 
@@ -1125,7 +1125,7 @@ body {
 }
 
 .team-image:hover p {
-  color: red;
+  color: #6dd5ed;
 }
 
 @media (max-width: 768px) {
@@ -1190,8 +1190,6 @@ video:focus {
 .mychat ::-webkit-scrollbar {
   width: 0px !important;
   /* Remove scrollbar space */
-  background: none !important;
-  /* Optional: just make scrollbar invisible */
 }
 
 .logIn {
@@ -1220,7 +1218,7 @@ video:focus {
 }
 
 .logIn h6 {
-  font-size: 35px;
+  font-size: 40px;
   color: white;
 }
 
@@ -1232,7 +1230,7 @@ video:focus {
 }
 
 .logIn strong {
-  font-size: 35px !important;
+  font-size: 40px !important;
 }
 
 .logIn input {
@@ -1278,7 +1276,7 @@ video:focus {
 }
 
 .chatContainer {
-  overflow-x: hidden !important;
+  z-index: 9999999999999 !important;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   width: 50%;
@@ -1296,13 +1294,6 @@ video:focus {
           flex-direction: column;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
-}
-
-.chatContainer ::-webkit-scrollbar {
-  width: 0px !important;
-  /* Remove scrollbar space */
-  background: none !important;
-  /* Optional: just make scrollbar invisible */
 }
 
 .chatContainer .inputs {
@@ -1330,12 +1321,7 @@ video:focus {
 
 @media (max-width: 600px) {
   .logIn .mytitle {
-    font-size: 20px !important;
-    margin-bottom: 10px !important;
-    padding: 0 !important;
-  }
-  .logIn .mytitle strong {
-    font-size: 20px !important;
+    padding-bottom: 5% !important;
   }
 }
 
@@ -1343,26 +1329,8 @@ video:focus {
   .logIn {
     width: 100% !important;
   }
-  .logIn h6 {
-    font-size: 50px !important;
-    color: white;
-  }
-  .logIn strong {
-    background-color: #ff8c00;
-    color: #000;
-    border-radius: 5px;
-    font-size: 50px !important;
-    padding: 2px 5px;
-  }
   .chatContainer {
-    overflow-x: hidden !important;
     width: 100%;
-  }
-  .chatContainer ::-webkit-scrollbar {
-    width: 0px !important;
-    /* Remove scrollbar space */
-    background: none !important;
-    /* Optional: just make scrollbar invisible */
   }
   .chatContainer h1 {
     font-size: 20px !important;

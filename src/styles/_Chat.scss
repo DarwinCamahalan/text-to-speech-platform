@@ -6,7 +6,6 @@
   overflow-x: hidden !important;
   ::-webkit-scrollbar {
     width: 0px !important; /* Remove scrollbar space */
-    background: none !important; /* Optional: just make scrollbar invisible */
   }
 }
 
@@ -28,7 +27,7 @@
   backdrop-filter: blur(5px);
 
   h6 {
-    font-size: 35px;
+    font-size: 40px;
     color: white;
   }
   span {
@@ -38,7 +37,7 @@
     padding: 2px 5px;
   }
   strong {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
 }
 
@@ -85,11 +84,7 @@
 }
 
 .chatContainer {
-  overflow-x: hidden !important;
-  ::-webkit-scrollbar {
-    width: 0px !important; /* Remove scrollbar space */
-    background: none !important; /* Optional: just make scrollbar invisible */
-  }
+  z-index: 9999999999999 !important;
   backdrop-filter: blur(5px);
   width: 50%;
   height: 100%;
@@ -124,12 +119,7 @@
 @media (max-width: 600px) {
   .logIn {
     .mytitle {
-      font-size: 20px !important;
-      margin-bottom: 10px !important;
-      padding: 0 !important;
-      strong {
-        font-size: 20px !important;
-      }
+      padding-bottom: 5% !important;
     }
   }
 }
@@ -137,26 +127,9 @@
 @media (max-width: 1000px) {
   .logIn {
     width: 100% !important;
-
-    h6 {
-      font-size: 50px !important;
-      color: white;
-    }
-    strong {
-      background-color: #ff8c00;
-      color: #000;
-      border-radius: 5px;
-      font-size: 50px !important;
-      padding: 2px 5px;
-    }
   }
 
   .chatContainer {
-    overflow-x: hidden !important;
-    ::-webkit-scrollbar {
-      width: 0px !important; /* Remove scrollbar space */
-      background: none !important; /* Optional: just make scrollbar invisible */
-    }
     width: 100%;
     h1 {
       font-size: 20px !important;
