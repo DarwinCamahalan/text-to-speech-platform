@@ -8,7 +8,7 @@ export default function LongFooter() {
     <div className="main-footer text-center">
       <Container className="py-5 mx-auto">
         <Row className="mx-auto">
-          <Col className="c1" xl="4">
+          <Col className="c1" lg="4">
             <h1
               className="py-3"
               style={{ fontSize: "25px", color: " #6dd5ed" }}
@@ -32,7 +32,7 @@ export default function LongFooter() {
               Face Recognition <span>2077</span>
             </NavLink>
           </Col>
-          <Col className="c1" xl="4">
+          <Col className="c1" lg="4">
             <h1
               className="py-3"
               style={{ fontSize: "25px", color: " #6dd5ed" }}
@@ -55,7 +55,7 @@ export default function LongFooter() {
               <span>LinkedIn: </span> Darwin Camahalan
             </NavLink>
           </Col>
-          <Col className="c1" xl="4">
+          <Col className="c1" lg="4">
             <h1
               className="py-3"
               style={{ fontSize: "25px", color: " #6dd5ed" }}

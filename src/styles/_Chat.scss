@@ -1,4 +1,4 @@
-.App {
+.mychat {
   display: grid;
   place-items: center;
   height: 70vh;
@@ -121,16 +121,15 @@
     height: 100% !important;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .logIn {
-    width: 100%;
-    padding: 0 50%;
-    input {
-      margin-left: 0 !important;
-      width: 200px !important;
-    }
     .mytitle {
-      display: none;
+      font-size: 20px !important;
+      margin-bottom: 10px !important;
+      padding: 0 !important;
+      strong {
+        font-size: 20px !important;
+      }
     }
   }
 }
@@ -306,4 +305,5 @@
 
 .scrollable {
   overflow-x: hidden !important;
+  padding: 0 2% !important;
 }

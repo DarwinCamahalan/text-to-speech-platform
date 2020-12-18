@@ -38,7 +38,7 @@ export default function Products() {
         </h1>
         <Row className="m-0 p-0">
           {products.map((products, index) => (
-            <Col key={index} xl="3">
+            <Col key={index} lg="3">
               <Tilt className="tilt p-0 m-0">
                 <NavLink href={products.to}>
                   <div className="card2">

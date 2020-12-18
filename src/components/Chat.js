@@ -8,7 +8,7 @@ import ScrollableFeed from "react-scrollable-feed";
 let socket;
 const CONNECTION_PORT = process.env.PORT || "localhost:69";
 
-function App() {
+function Chat() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [room, setRoom] = useState("");
   const [userName, setUserName] = useState("");
@@ -44,7 +44,7 @@ function App() {
   };
 
   return (
-    <header className="App">
+    <header className="mychat">
       <Helmet>
         <title>Chat Hub</title>
       </Helmet>
@@ -59,7 +59,7 @@ function App() {
               <strong>hub</strong>
             </span>
           </h6>
-          <div className="inputs">
+          <div className="inputs text-center">
             <input
               type="text"
               placeholder="Name"
@@ -98,10 +98,10 @@ function App() {
           <hr />
           <ScrollableFeed className="scrollable">
             <div className="messages py-3">
-              {messageList.map((val, key) => {
+              {messageList.map((val, index) => {
                 return (
                   <Tilt className="tilt ">
-                    <div className="my-2 mr-3">
+                    <div className="my-2 mr-3" key={index}>
                       {" "}
                       <p
                         style={{ color: "#fff", marginRight: "10" }}
@@ -116,12 +116,12 @@ function App() {
                         {val.author}
                       </p>
                     </div>
-                    <divs
+                    <div
                       className="messageContainer"
                       id={val.author === userName ? "You" : "Other"}
                     >
                       <div className="messageIndividual">{val.message}</div>
-                    </divs>
+                    </div>
                   </Tilt>
                 );
               })}
@@ -138,7 +138,7 @@ function App() {
             />
 
             <button className="mybtn text-center" onClick={sendMessage}>
-              <i class="fas fa-paper-plane"></i>
+              <i className="fas fa-paper-plane"></i>
             </button>
           </div>
         </div>
@@ -147,4 +147,4 @@ function App() {
   );
 }
 
-export default App;
+export default Chat;

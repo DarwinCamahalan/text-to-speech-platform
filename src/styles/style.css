@@ -1178,7 +1178,7 @@ video:focus {
   outline: none;
 }
 
-.App {
+.mychat {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -1187,7 +1187,7 @@ video:focus {
   overflow-x: hidden !important;
 }
 
-.App ::-webkit-scrollbar {
+.mychat ::-webkit-scrollbar {
   width: 0px !important;
   /* Remove scrollbar space */
   background: none !important;
@@ -1328,17 +1328,14 @@ video:focus {
   height: 100% !important;
 }
 
-@media (max-width: 700px) {
-  .logIn {
-    width: 100%;
-    padding: 0 50%;
-  }
-  .logIn input {
-    margin-left: 0 !important;
-    width: 200px !important;
-  }
+@media (max-width: 600px) {
   .logIn .mytitle {
-    display: none;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+  }
+  .logIn .mytitle strong {
+    font-size: 20px !important;
   }
 }
 
@@ -1588,6 +1585,7 @@ video:focus {
 
 .scrollable {
   overflow-x: hidden !important;
+  padding: 0 2% !important;
 }
 
 .head {

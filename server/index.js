@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 const server = app.listen(PORT, () => {
-  console.log("\nServer Running on Port 69 😋💦");
+  console.log("\nServer Running on Port 69 😋 💦");
 });
 
 io = socket(server);
@@ -22,20 +22,21 @@ io.on("connection", (socket) => {
       "________________________________\n\nUser Joined Room: " + data + " 👋"
     );
     console.log(
-      "\nChat Room " +
+      "\nChat Room (" +
         data +
-        " ID: " +
+        ") ID Token: " +
         socket.id +
         " 🎉\n________________________________\n"
     );
-    socket.on("disconnect", () => {
-      console.log("\n❌  A User Left the Chat Room  ❌");
-    });
   });
 
   socket.on("send_message", (data) => {
-    console.log("💌  Data Received from a User:\n");
+    console.log("\n💌  Data Received from a User:\n");
     console.log(data);
     socket.to(data.room).emit("receive_message", data.content);
+  });
+
+  socket.on("disconnect", () => {
+    console.log("\n❌  A User Left the Chat Room  ❌");
   });
 });
