@@ -1331,6 +1331,12 @@ video:focus {
   .logIn .mytitle {
     padding-bottom: 5% !important;
   }
+  .santa {
+    display: none;
+  }
+  .santa2 {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {

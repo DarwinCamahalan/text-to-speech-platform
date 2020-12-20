@@ -14,7 +14,7 @@ function Chat() {
   const [room, setRoom] = useState("");
   const [userName, setUserName] = useState("");
 
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = React.useState("");
   const [messageList, setMessageList] = useState([]);
 
   const { listen, stop, listening } = useSpeechRecognition({
