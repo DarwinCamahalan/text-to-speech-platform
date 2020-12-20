@@ -13,16 +13,59 @@ import LongFooter from "../components/LongFooter";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  let xmasAudio = new Audio("/assets/music/xmas.mp3");
+  let bgaudio = new Audio("/assets/music/electric.mp3");
+  let hoho = new Audio("/assets/music/hoho.mp3");
+  bgaudio.play();
+  const start = () => {
+    document.getElementById("homebg").style.backgroundImage =
+      "url(assets/image/snow.gif)";
+
+    xmasAudio.play();
+    bgaudio.pause();
+  };
+  const stopAll = () => {
+    hoho.pause();
+  };
+
+  const xmashoho = () => {
+    hoho.play();
+  };
+  const normal = () => {
+    document.getElementById("homebg").style.backgroundImage = "none";
+    xmasAudio.pause();
+    bgaudio.play();
+  };
   return (
-    <div>
+    <div id="homebg">
       <Helmet>
         <title>Home</title>
       </Helmet>
       <NavigationBar />
       <Social />
       <ChatButton />
+
+      <img
+        className="santa"
+        data-toggle="tooltip"
+        title="Click Me!"
+        data-placement="top"
+        src="/assets/image/santa.png"
+        alt="santa"
+        onClick={start}
+        onMouseEnter={xmashoho}
+        onMouseLeave={stopAll}
+      />
+      <img
+        className="santa2"
+        data-toggle="tooltip"
+        title="Turn Off Christmas Mode"
+        src="/assets/image/deer.png"
+        alt="santa"
+        onClick={normal}
+      />
       <audio autoPlay loop>
-        <source src="/assets/music/electric.mp3" />
+        <source src={bgaudio} />
       </audio>
       <MainHeader />
       <h1 className="text-center" style={{ color: "#6dd5ed" }}>

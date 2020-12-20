@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Tilt from "react-vanilla-tilt";
 import "../styles/style.css";
 import ScrollableFeed from "react-scrollable-feed";
+import { useSpeechRecognition } from "react-speech-kit";
 
 let socket;
 const CONNECTION_PORT = process.env.PORT || "localhost:69";
@@ -15,6 +16,12 @@ function Chat() {
 
   const [message, setMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
+
+  const { listen, stop, listening } = useSpeechRecognition({
+    onResult: (result) => {
+      setMessage(result);
+    },
+  });
 
   useEffect(() => {
     socket = io(CONNECTION_PORT);
@@ -44,7 +51,7 @@ function Chat() {
   };
 
   return (
-    <header className="mychat">
+    <div className="mychat">
       <Helmet>
         <title>Chat Hub</title>
       </Helmet>
@@ -127,23 +134,33 @@ function Chat() {
               })}
             </div>
           </ScrollableFeed>
+          {listening && (
+            <p className="text-white text-center">Microphone is On</p>
+          )}
           <div className="messageInputs">
+            <button
+              className=" text-center"
+              onMouseDown={listen}
+              onMouseUp={stop}
+            >
+              {" "}
+              <i className="fas fa-microphone "></i>
+            </button>
             <input
               className="inputs bg-transparent"
               type="text"
+              value={message}
               placeholder="Input Your Message Here..."
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
+              onChange={(e) => setMessage(e.target.value)}
             />
 
             <button className="mybtn text-center" onClick={sendMessage}>
-              <i className="fas fa-paper-plane"></i>
+              <i className="fas fa-paper-plane "></i>
             </button>
           </div>
         </div>
       )}
-    </header>
+    </div>
   );
 }
 

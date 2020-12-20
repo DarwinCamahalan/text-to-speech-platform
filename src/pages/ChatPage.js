@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/style.css";
 import NavigationBar from "../components/NavBar";
 import Social from "../components/Social";
 import Chat from "../components/Chat";
@@ -9,13 +9,15 @@ import LongFooter from "../components/LongFooter";
 
 export default function ChatPage() {
   return (
-    <div>
+    <>
       <NavigationBar />
-      <Social />
-      <Chat />
-      <Products />
+      <div className="bgchat">
+        <Social />
+        <Chat />
+        <Products />
+      </div>
       <LongFooter />
       <Footer />
-    </div>
+    </>
   );
 }

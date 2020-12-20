@@ -9,9 +9,7 @@ export default function BeingBuilt() {
         <Helmet>
           <title>Page Being Built</title>
         </Helmet>
-        <audio autoPlay loop>
-          <source src="/assets/music/electric.mp3" />
-        </audio>
+
         <Container
           className="py-5 mt-5 text-center text-white vtt"
           style={{ fontFamily: "Poppins" }}

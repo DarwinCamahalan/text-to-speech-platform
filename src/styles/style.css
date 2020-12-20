@@ -1185,13 +1185,20 @@ video:focus {
   display: grid;
   place-items: center;
   height: 70vh;
-  margin-top: 5%;
+  margin-top: 3%;
   overflow-x: hidden !important;
 }
 
 .mychat ::-webkit-scrollbar {
   width: 0px !important;
   /* Remove scrollbar space */
+}
+
+.bgchat {
+  background-image: url("./img/g6.gif");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .logIn {
@@ -1278,7 +1285,6 @@ video:focus {
 }
 
 .chatContainer {
-  z-index: 9999999999999 !important;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   width: 50%;
@@ -1330,9 +1336,16 @@ video:focus {
 @media (max-width: 1000px) {
   .logIn {
     width: 100% !important;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
   }
   .chatContainer {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
     width: 100%;
+  }
+  .chatContainer input {
+    margin: 0 2% !important;
   }
   .chatContainer h1 {
     font-size: 20px !important;
@@ -1351,10 +1364,6 @@ video:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .App {
-    margin-top: 10%;
-    padding: 0 1%;
   }
   .chatContainer .messageInputs {
     -webkit-box-flex: 20%;
@@ -1719,8 +1728,6 @@ hr {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-filter: hue-rotate(150deg);
-          filter: hue-rotate(150deg);
 }
 
 .cons {
@@ -1737,6 +1744,39 @@ hr {
   bottom: 0;
   width: 8%;
   z-index: 99;
+}
+
+.santa {
+  width: 95px;
+  position: fixed;
+  z-index: 99;
+  top: 72%;
+  left: 0;
+  cursor: pointer;
+}
+
+.santa2 {
+  width: 50px;
+  position: fixed;
+  z-index: 100;
+  top: 92.1%;
+  left: 4%;
+  cursor: pointer;
+}
+
+.santa:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  top: 60%;
+  left: 3.5%;
+  -webkit-transition: all ease-in-out 400ms;
+  transition: all ease-in-out 400ms;
+}
+
+.santa2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  top: 91%;
 }
 
 @media (max-width: 1000px) {

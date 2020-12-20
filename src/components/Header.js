@@ -10,6 +10,10 @@ export default function Header() {
     myaudio2.play();
     myaudio3.play();
   };
+  const stopAll = () => {
+    myaudio2.pause();
+    myaudio3.pause();
+  };
 
   return (
     <>
@@ -46,7 +50,11 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <div onMouseEnter={start} className="header-robot">
+            <div
+              onMouseEnter={start}
+              onMouseLeave={stopAll}
+              className="header-robot"
+            >
               <img src="/assets/image/robot2.png" alt="robot" />
               <img src="/assets/video/gif2.gif" alt="gif" className="thunder" />
               <img

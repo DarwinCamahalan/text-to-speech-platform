@@ -123,7 +123,6 @@ hr {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  filter: hue-rotate(150deg);
 }
 .cons {
   background-image: url("./img/bg2.gif");
@@ -139,6 +138,33 @@ hr {
     width: 8%;
     z-index: 99;
   }
+}
+
+.santa {
+  width: 95px;
+  position: fixed;
+  z-index: 99;
+  top: 72%;
+  left: 0;
+  cursor: pointer;
+}
+.santa2 {
+  width: 50px;
+  position: fixed;
+  z-index: 100;
+  top: 92.1%;
+  left: 4%;
+  cursor: pointer;
+}
+.santa:hover {
+  transform: scale(2);
+  top: 60%;
+  left: 3.5%;
+  transition: all ease-in-out 400ms;
+}
+.santa2:hover {
+  transform: scale(1.1);
+  top: 91%;
 }
 
 @media (max-width: 1000px) {

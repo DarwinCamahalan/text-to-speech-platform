@@ -2,13 +2,18 @@
   display: grid;
   place-items: center;
   height: 70vh;
-  margin-top: 5%;
+  margin-top: 3%;
   overflow-x: hidden !important;
   ::-webkit-scrollbar {
     width: 0px !important; /* Remove scrollbar space */
   }
 }
-
+.bgchat {
+  background-image: url("./img/g6.gif");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 .logIn {
   background-image: url("./img/g1.gif");
   background-size: 30%;
@@ -84,7 +89,6 @@
 }
 
 .chatContainer {
-  z-index: 9999999999999 !important;
   backdrop-filter: blur(5px);
   width: 50%;
   height: 100%;
@@ -127,9 +131,14 @@
 @media (max-width: 1000px) {
   .logIn {
     width: 100% !important;
+    backdrop-filter: blur(20px);
   }
 
   .chatContainer {
+    backdrop-filter: blur(20px);
+    input {
+      margin: 0 2% !important;
+    }
     width: 100%;
     h1 {
       font-size: 20px !important;
@@ -145,10 +154,6 @@
     width: 50%;
     justify-content: center;
     align-items: center;
-  }
-  .App {
-    margin-top: 10%;
-    padding: 0 1%;
   }
 
   .chatContainer .messageInputs {
