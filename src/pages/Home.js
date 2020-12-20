@@ -16,10 +16,12 @@ export default function Home() {
   let xmasAudio = new Audio("/assets/music/xmas.mp3");
   let bgaudio = new Audio("/assets/music/electric.mp3");
   let hoho = new Audio("/assets/music/hoho.mp3");
+
   bgaudio.play();
   const start = () => {
     document.getElementById("homebg").style.backgroundImage =
       "url(assets/image/snow.gif)";
+    document.getElementById("extra").style.display = "block";
 
     xmasAudio.play();
     bgaudio.pause();
@@ -30,11 +32,13 @@ export default function Home() {
 
   const xmashoho = () => {
     hoho.play();
+    bgaudio.pause();
   };
   const normal = () => {
     document.getElementById("homebg").style.backgroundImage = "none";
     xmasAudio.pause();
     bgaudio.play();
+    document.getElementById("extra").style.display = "none";
   };
   return (
     <div id="homebg">
@@ -64,6 +68,14 @@ export default function Home() {
         alt="santa"
         onClick={normal}
       />
+
+      <img
+        id="extra"
+        className="extra"
+        src="/assets/image/gift.gif"
+        alt="gift"
+      />
+
       <audio autoPlay loop>
         <source src={bgaudio} />
       </audio>

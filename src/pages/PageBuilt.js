@@ -15,7 +15,7 @@ export default function PageBuilt() {
   const start = () => {
     document.getElementById("builtbg").style.backgroundImage =
       "url(assets/image/snow.gif)";
-
+    document.getElementById("extra").style.display = "block";
     xmasAudio.play();
     bgaudio.pause();
   };
@@ -30,6 +30,7 @@ export default function PageBuilt() {
     document.getElementById("builtbg").style.backgroundImage = "none";
     xmasAudio.pause();
     bgaudio.play();
+    document.getElementById("extra").style.display = "none";
   };
   return (
     <div id="builtbg">
@@ -54,6 +55,12 @@ export default function PageBuilt() {
         src="/assets/image/deer.png"
         alt="santa"
         onClick={normal}
+      />
+      <img
+        id="extra"
+        className="extra"
+        src="/assets/image/gift.gif"
+        alt="gift"
       />
       <audio autoPlay loop>
         <source src={bgaudio} />

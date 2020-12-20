@@ -15,8 +15,8 @@ export default function ChatPage() {
         <Social />
         <Chat />
         <Products />
+        <LongFooter />
       </div>
-      <LongFooter />
       <Footer />
     </>
   );

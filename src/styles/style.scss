@@ -100,7 +100,8 @@ hr {
 }
 
 .tilt {
-  background: inherit !important;
+  background: transparent !important;
+
   width: 100% !important;
   z-index: 99999 !important;
   margin: 0 !important;
@@ -156,6 +157,16 @@ hr {
   left: 4%;
   cursor: pointer;
 }
+.extra {
+  width: 200px;
+  position: fixed;
+  z-index: 100;
+  top: 75%;
+  right: 6%;
+  display: none;
+  filter: blur(1.1px);
+}
+
 .santa:hover {
   transform: scale(2);
   top: 60%;

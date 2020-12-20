@@ -11,7 +11,7 @@
 .bgchat {
   background-image: url("./img/g6.gif");
   background-size: cover;
-  background-position: top;
+  background-position: right;
   background-repeat: no-repeat;
 }
 .logIn {
@@ -137,11 +137,9 @@
 @media (max-width: 1000px) {
   .logIn {
     width: 100% !important;
-    backdrop-filter: blur(20px);
   }
 
   .chatContainer {
-    backdrop-filter: blur(20px);
     input {
       margin: 0 2% !important;
     }

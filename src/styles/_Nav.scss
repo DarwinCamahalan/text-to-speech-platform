@@ -29,9 +29,9 @@
   }
 }
 nav {
-  background: none;
   font-family: "Nosifer", cursive;
   position: relative;
+  backdrop-filter: blur(5px);
   p {
     font-family: "Goldman", cursive;
     font-weight: bolder;

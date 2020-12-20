@@ -31,9 +31,10 @@
 }
 
 nav {
-  background: none;
   font-family: "Nosifer", cursive;
   position: relative;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 nav p {
@@ -232,8 +233,8 @@ header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(5px) !important;
+          backdrop-filter: blur(5px) !important;
 }
 
 header .container .text {
@@ -1197,7 +1198,7 @@ video:focus {
 .bgchat {
   background-image: url("./img/g6.gif");
   background-size: cover;
-  background-position: top;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
@@ -1342,12 +1343,8 @@ video:focus {
 @media (max-width: 1000px) {
   .logIn {
     width: 100% !important;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
   }
   .chatContainer {
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
     width: 100%;
   }
   .chatContainer input {
@@ -1595,6 +1592,8 @@ video:focus {
   border-top: 1px solid #6dd5ed;
   -webkit-box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
   box-shadow: 0px 0px 25px -5px rgba(11, 255, 249, 0.6) !important;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .main-footer a {
@@ -1695,7 +1694,7 @@ hr {
 }
 
 .tilt {
-  background: inherit !important;
+  background: transparent !important;
   width: 100% !important;
   z-index: 99999 !important;
   margin: 0 !important;
@@ -1768,6 +1767,17 @@ hr {
   top: 92.1%;
   left: 4%;
   cursor: pointer;
+}
+
+.extra {
+  width: 200px;
+  position: fixed;
+  z-index: 100;
+  top: 75%;
+  right: 6%;
+  display: none;
+  -webkit-filter: blur(1.1px);
+          filter: blur(1.1px);
 }
 
 .santa:hover {
