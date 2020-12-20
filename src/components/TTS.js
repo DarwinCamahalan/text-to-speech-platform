@@ -22,10 +22,6 @@ export default function TTS() {
     myaudio2.play();
     myaudio3.play();
   };
-  const stopAll = () => {
-    myaudio2.pause();
-    myaudio3.pause();
-  };
   const { speak } = useSpeechSynthesis(); // using Google Tensorflow API for converting text into Audio and storing it to a variable named "speak"
   const { listen, listening, stop } = useSpeechRecognition({
     // destructuring the Google Tensorflow API and only using the listen, listening, and stop functions
@@ -120,8 +116,7 @@ export default function TTS() {
           {/* Container for Robot Image */}{" "}
           <img
             // The Robot Image itself
-            onMouseEnter={start2}
-            onMouseLeave={stopAll} // when user hover onto the robot image it will make a audio which robot will challenge the user :)
+            onMouseEnter={start2} // when user hover onto the robot image it will make a audio which robot will challenge the user :)
             // "start2" is the variable mentioned above
             src="/assets/image/robot4.png" // Robot Image Directory
             alt="robot"
