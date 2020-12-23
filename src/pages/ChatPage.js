@@ -11,12 +11,10 @@ export default function ChatPage() {
   return (
     <>
       <NavigationBar />
-      <div className="bgchat">
-        <Social />
-        <Chat />
-        <Products />
-        <LongFooter />
-      </div>
+      <Social />
+      <Chat />
+      <Products />
+      <LongFooter />
       <Footer />
     </>
   );

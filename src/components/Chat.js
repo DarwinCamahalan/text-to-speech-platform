@@ -51,7 +51,7 @@ function Chat() {
   };
 
   return (
-    <div className="mychat">
+    <header className="mychat">
       <Helmet>
         <title>Chat Hub</title>
       </Helmet>
@@ -160,7 +160,7 @@ function Chat() {
           </div>
         </div>
       )}
-    </div>
+    </header>
   );
 }
 
