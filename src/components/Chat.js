@@ -66,7 +66,7 @@ function Chat() {
               <strong>hub</strong>
             </span>
           </h6>
-          <div className="inputs   text-center">
+          <div className="inputs   ztext-center">
             <input
               type="text"
               placeholder="Name"

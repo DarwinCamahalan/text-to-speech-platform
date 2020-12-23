@@ -52,7 +52,7 @@ export default function Home() {
       <img
         className="santa"
         data-toggle="tooltip"
-        title="Click Me!"
+        title="Click Me! 🎄🎅"
         data-placement="top"
         src="/assets/image/santa.png"
         alt="santa"
@@ -63,7 +63,7 @@ export default function Home() {
       <img
         className="santa2"
         data-toggle="tooltip"
-        title="Turn Off Christmas Mode"
+        title="Turn Off Christmas Mode 🎄"
         src="/assets/image/deer.png"
         alt="santa"
         onClick={normal}
